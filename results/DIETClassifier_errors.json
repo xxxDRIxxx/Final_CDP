@@ -1,0 +1,124 @@
+[
+  {
+    "text": "grade card",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "grade card",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 10,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "coe",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "coe",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 3,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want food",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 11,
+        "confidence_entity": 0.5909217000007629,
+        "value": "food",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "gm",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "gm",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "get me certificate of enrollment",
+    "entities": [
+      {
+        "start": 7,
+        "end": 32,
+        "value": "certificate of enrollment",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 32,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7251779437065125,
+        "value": "get",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "document_type",
+        "start": 4,
+        "end": 6,
+        "confidence_entity": 0.7729955315589905,
+        "value": "me",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 32,
+        "confidence_entity": 0.9924619793891907,
+        "value": "certificate of enrollment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

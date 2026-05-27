@@ -1,0 +1,33 @@
+recipe: default.v1
+language: en
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: RegexEntityExtractor
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+  - name: FallbackClassifier
+    threshold: 0.6
+    ambiguity_threshold: 0.1
+
+policies:
+- name: RulePolicy
+  core_fallback_threshold: 0.30
+  core_fallback_action_name: "action_context_fallback"
+  enable_fallback_prediction: true
+
+- name: TEDPolicy
+  max_history: 5
+  epochs: 120
+  constrain_similarities: true
+assistant_id: 20260224-181643-piercing-judy

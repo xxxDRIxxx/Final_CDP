@@ -1,0 +1,25 @@
+# Chatbot
+rasa==3.6.21
+rasa-sdk==3.6.2
+
+# ML
+tensorflow==2.12.0
+numpy==1.23.5
+scikit-learn==1.1.3
+
+# OCR
+easyocr==1.7.1
+opencv-python==4.8.1.78
+Pillow==10.0.0
+
+# Database
+mysql-connector-python==9.5.0
+
+# Utilities
+python-dotenv==1.0.0
+requests==2.31.0
+tqdm==4.66.1
+
+# Compatibility
+grpcio==1.59.0
+grpcio-tools==1.59.0

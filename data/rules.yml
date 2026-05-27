@@ -1,0 +1,267 @@
+version: "3.1"
+
+rules:
+
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: affirm
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - rule: deny
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - rule: fallback
+    steps:
+      - intent: fallback
+      - action: action_context_fallback
+
+  - rule: pronoun followup
+    steps:
+      - intent: pronoun_followup
+      - action: action_handle_pronoun
+
+  - rule: ask document type
+    steps:
+      - intent: ask_request_school_forms
+      - action: utter_ask_document_type
+
+  - rule: route document type
+    steps:
+      - intent: inform
+      - action: action_route_document_type
+
+  - rule: ask replace lost id
+    steps:
+      - intent: ask_replace_lost_id
+      - action: action_set_topic
+      - action: utter_replace_lost_id
+      - action: action_suggest_followups
+
+  - rule: ask replace report card
+    steps:
+      - intent: ask_replace_report_card
+      - action: action_set_topic
+      - action: utter_replace_report_card
+      - action: action_suggest_followups
+
+  - rule: ask enroll
+    steps:
+      - intent: ask_enroll
+      - action: action_set_topic
+      - action: utter_enroll
+      - action: action_suggest_followups
+
+  - rule: ask enrollment requirements
+    steps:
+      - intent: ask_enrollment_requirements
+      - action: action_set_topic
+      - action: utter_enrollment_requirements
+      - action: action_suggest_followups
+
+  - rule: ask get enrollment form
+    steps:
+      - intent: ask_get_enrollment_form
+      - action: action_set_topic
+      - action: utter_get_enrollment_form
+      - action: action_suggest_followups
+
+  - rule: ask release after request
+    steps:
+      - intent: ask_release_after_request
+      - action: action_set_topic
+      - action: utter_release_after_request
+      - action: action_suggest_followups
+
+  - rule: ask uniform cost
+    steps:
+      - intent: ask_uniform_cost
+      - action: action_set_topic
+      - action: utter_uniform_cost
+      - action: action_suggest_followups
+
+  - rule: ask transferee late enrollee
+    steps:
+      - intent: ask_transferee_late_enrollee
+      - action: action_set_topic
+      - action: utter_transferee_late_enrollee
+      - action: action_suggest_followups
+
+  - rule: ask change strand
+    steps:
+      - intent: ask_change_strand
+      - action: action_set_topic
+      - action: utter_change_strand
+      - action: action_suggest_followups
+
+  - rule: ask switch strands midsemester
+    steps:
+      - intent: ask_switch_strands_midsemester
+      - action: action_set_topic
+      - action: utter_switch_strands_midsemester
+      - action: action_suggest_followups
+
+  - rule: ask failing marks
+    steps:
+      - intent: ask_failing_marks
+      - action: action_set_topic
+      - action: utter_failing_marks
+      - action: action_suggest_followups
+
+  - rule: ask graduation requirements
+    steps:
+      - intent: ask_graduation_requirements
+      - action: action_set_topic
+      - action: utter_graduation_requirements
+      - action: action_suggest_followups
+
+  - rule: ask drop add subjects
+    steps:
+      - intent: ask_drop_add_subjects
+      - action: action_set_topic
+      - action: utter_drop_add_subjects
+      - action: action_suggest_followups
+
+  - rule: ask drop student process
+    steps:
+      - intent: ask_drop_student_process
+      - action: action_set_topic
+      - action: utter_drop_student_process
+      - action: action_suggest_followups
+
+  - rule: ask absence policy
+    steps:
+      - intent: ask_absence_policy
+      - action: action_set_topic
+      - action: utter_absence_policy
+      - action: action_suggest_followups
+
+  - rule: ask facility request
+    steps:
+      - intent: ask_facility_request
+      - action: action_set_topic
+      - action: utter_facility_request
+      - action: action_suggest_followups
+
+  - rule: ask authorized claim
+    steps:
+      - intent: ask_authorized_claim
+      - action: action_set_topic
+      - action: utter_authorized_claim
+      - action: action_suggest_followups
+
+  - rule: ask certificate fee
+    steps:
+      - intent: ask_certificate_fee
+      - action: action_set_topic
+      - action: utter_certificate_fee
+      - action: action_suggest_followups
+
+  - rule: ask process documents time
+    steps:
+      - intent: ask_process_documents_time
+      - action: action_set_topic
+      - action: utter_process_documents_time
+      - action: action_suggest_followups
+
+  - rule: ask class standing
+    steps:
+      - intent: ask_class_standing
+      - action: action_set_topic
+      - action: utter_class_standing
+      - action: action_suggest_followups
+
+  - rule: ask absence limit
+    steps:
+      - intent: ask_absence_limit
+      - action: action_set_topic
+      - action: utter_absence_limit
+      - action: action_suggest_followups
+
+  - rule: ask contact information
+    steps:
+      - intent: ask_contact_information
+      - action: action_set_topic
+      - action: utter_contact_information
+      - action: action_suggest_followups
+
+  - rule: ask school address
+    steps:
+      - intent: ask_school_address
+      - action: action_set_topic
+      - action: utter_school_address
+      - action: action_suggest_followups
+
+  - rule: ask about school
+    steps:
+      - intent: ask_about_school
+      - action: action_set_topic
+      - action: utter_about_school
+      - action: action_suggest_followups
+
+  - rule: ask who can apply
+    steps:
+      - intent: ask_who_can_apply
+      - action: action_set_topic
+      - action: utter_who_can_apply
+      - action: action_suggest_followups
+
+  - rule: ask academic strands
+    steps:
+      - intent: ask_academic_strands
+      - action: action_set_topic
+      - action: utter_academic_strands
+      - action: action_suggest_followups
+
+  - rule: ask transfer midsemester
+    steps:
+      - intent: ask_transfer_midsemester
+      - action: action_set_topic
+      - action: utter_transfer_midsemester
+      - action: action_suggest_followups
+
+  - rule: ask class size
+    steps:
+      - intent: ask_class_size
+      - action: action_set_topic
+      - action: utter_class_size
+      - action: action_suggest_followups
+
+  - rule: ask learning modes
+    steps:
+      - intent: ask_learning_modes
+      - action: action_set_topic
+      - action: utter_learning_modes
+      - action: action_suggest_followups
+
+  - rule: ask learning modules
+    steps:
+      - intent: ask_learning_modules
+      - action: action_set_topic
+      - action: utter_learning_modules
+      - action: action_suggest_followups
+
+  - rule: ask scholarships
+    steps:
+      - intent: ask_scholarships
+      - action: action_set_topic
+      - action: utter_scholarships
+      - action: action_suggest_followups
+
+  - rule: ask eligibility requirements
+    steps:
+      - intent: ask_eligibility_requirements
+      - action: action_set_topic
+      - action: utter_eligibility_requirements
+      - action: action_suggest_followups

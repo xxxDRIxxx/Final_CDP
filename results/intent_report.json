@@ -1,0 +1,405 @@
+{
+  "ask_switch_strands_midsemester": {
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1-score": 0.6666666666666665,
+    "support": 10,
+    "confused_with": {
+      "ask_change_strand": 2,
+      "ask_eligibility_requirements": 1
+    }
+  },
+  "ask_scholarships": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "ask_facility_request": {
+    "precision": 0.9310344827586207,
+    "recall": 0.6585365853658537,
+    "f1-score": 0.7714285714285715,
+    "support": 41,
+    "confused_with": {
+      "ask_request_school_forms": 5,
+      "ask_drop_add_subjects": 1
+    }
+  },
+  "ask_learning_modules": {
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1-score": 0.9090909090909091,
+    "support": 10,
+    "confused_with": {}
+  },
+  "ask_learning_modes": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 10,
+    "confused_with": {
+      "ask_request_school_forms": 2
+    }
+  },
+  "ask_change_strand": {
+    "precision": 0.925,
+    "recall": 0.9024390243902439,
+    "f1-score": 0.9135802469135802,
+    "support": 41,
+    "confused_with": {
+      "ask_switch_strands_midsemester": 2,
+      "ask_enrollment_requirements": 1
+    }
+  },
+  "ask_eligibility_requirements": {
+    "precision": 0.8181818181818182,
+    "recall": 0.9,
+    "f1-score": 0.8571428571428572,
+    "support": 10,
+    "confused_with": {
+      "ask_enrollment_requirements": 1
+    }
+  },
+  "ask_transferee_late_enrollee": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8536585365853658,
+    "f1-score": 0.8433734939759037,
+    "support": 41,
+    "confused_with": {
+      "ask_enrollment_requirements": 2,
+      "ask_enroll": 2
+    }
+  },
+  "ask_uniform_cost": {
+    "precision": 0.9607843137254902,
+    "recall": 1.0,
+    "f1-score": 0.98,
+    "support": 49,
+    "confused_with": {}
+  },
+  "ask_certificate_fee": {
+    "precision": 0.9736842105263158,
+    "recall": 0.8604651162790697,
+    "f1-score": 0.9135802469135803,
+    "support": 43,
+    "confused_with": {
+      "ask_request_school_forms": 4,
+      "ask_process_documents_time": 1
+    }
+  },
+  "ask_authorized_claim": {
+    "precision": 0.8837209302325582,
+    "recall": 0.9047619047619048,
+    "f1-score": 0.8941176470588236,
+    "support": 42,
+    "confused_with": {
+      "ask_release_after_request": 3,
+      "ask_certificate_fee": 1
+    }
+  },
+  "ask_absence_policy": {
+    "precision": 0.9210526315789473,
+    "recall": 0.8536585365853658,
+    "f1-score": 0.8860759493670887,
+    "support": 41,
+    "confused_with": {
+      "ask_absence_limit": 4,
+      "ask_authorized_claim": 1
+    }
+  },
+  "ask_graduation_requirements": {
+    "precision": 0.9736842105263158,
+    "recall": 0.925,
+    "f1-score": 0.9487179487179489,
+    "support": 40,
+    "confused_with": {
+      "ask_failing_marks": 1,
+      "ask_uniform_cost": 1
+    }
+  },
+  "ask_request_school_forms": {
+    "precision": 0.6981132075471698,
+    "recall": 0.8604651162790697,
+    "f1-score": 0.7708333333333334,
+    "support": 43,
+    "confused_with": {
+      "ask_get_enrollment_form": 1,
+      "inform": 1
+    }
+  },
+  "ask_replace_report_card": {
+    "precision": 0.9047619047619048,
+    "recall": 0.926829268292683,
+    "f1-score": 0.9156626506024096,
+    "support": 41,
+    "confused_with": {
+      "inform": 1,
+      "ask_request_school_forms": 1
+    }
+  },
+  "affirm": {
+    "precision": 0.6388888888888888,
+    "recall": 0.5609756097560976,
+    "f1-score": 0.5974025974025975,
+    "support": 41,
+    "confused_with": {
+      "pronoun_followup": 5,
+      "goodbye": 3
+    }
+  },
+  "ask_enrollment_requirements": {
+    "precision": 0.5333333333333333,
+    "recall": 0.5853658536585366,
+    "f1-score": 0.5581395348837209,
+    "support": 41,
+    "confused_with": {
+      "ask_enroll": 12,
+      "ask_transferee_late_enrollee": 2
+    }
+  },
+  "ask_absence_limit": {
+    "precision": 0.7948717948717948,
+    "recall": 0.7380952380952381,
+    "f1-score": 0.7654320987654322,
+    "support": 42,
+    "confused_with": {
+      "ask_drop_student_process": 5,
+      "ask_absence_policy": 3
+    }
+  },
+  "ask_about_school": {
+    "precision": 0.75,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.7999999999999999,
+    "support": 7,
+    "confused_with": {
+      "ask_enrollment_requirements": 1
+    }
+  },
+  "ask_contact_information": {
+    "precision": 0.9629629629629629,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.912280701754386,
+    "support": 30,
+    "confused_with": {
+      "ask_school_address": 2,
+      "ask_about_school": 1
+    }
+  },
+  "pronoun_followup": {
+    "precision": 0.7333333333333333,
+    "recall": 0.8048780487804879,
+    "f1-score": 0.7674418604651163,
+    "support": 41,
+    "confused_with": {
+      "affirm": 3,
+      "deny": 2
+    }
+  },
+  "ask_school_address": {
+    "precision": 0.8333333333333334,
+    "recall": 0.9523809523809523,
+    "f1-score": 0.888888888888889,
+    "support": 21,
+    "confused_with": {
+      "ask_contact_information": 1
+    }
+  },
+  "inform": {
+    "precision": 0.8979591836734694,
+    "recall": 0.9361702127659575,
+    "f1-score": 0.9166666666666666,
+    "support": 47,
+    "confused_with": {
+      "affirm": 1,
+      "ask_about_school": 1
+    }
+  },
+  "ask_failing_marks": {
+    "precision": 0.875,
+    "recall": 0.8536585365853658,
+    "f1-score": 0.8641975308641976,
+    "support": 41,
+    "confused_with": {
+      "ask_drop_student_process": 3,
+      "pronoun_followup": 1
+    }
+  },
+  "ask_academic_strands": {
+    "precision": 0.8888888888888888,
+    "recall": 0.8,
+    "f1-score": 0.8421052631578948,
+    "support": 10,
+    "confused_with": {
+      "ask_eligibility_requirements": 1,
+      "ask_change_strand": 1
+    }
+  },
+  "deny": {
+    "precision": 0.5813953488372093,
+    "recall": 0.625,
+    "f1-score": 0.6024096385542168,
+    "support": 40,
+    "confused_with": {
+      "fallback": 6,
+      "affirm": 3
+    }
+  },
+  "ask_class_size": {
+    "precision": 0.875,
+    "recall": 0.7,
+    "f1-score": 0.7777777777777777,
+    "support": 10,
+    "confused_with": {
+      "ask_who_can_apply": 2,
+      "ask_class_standing": 1
+    }
+  },
+  "ask_drop_add_subjects": {
+    "precision": 0.9069767441860465,
+    "recall": 0.9512195121951219,
+    "f1-score": 0.9285714285714286,
+    "support": 41,
+    "confused_with": {
+      "ask_drop_student_process": 2
+    }
+  },
+  "fallback": {
+    "precision": 0.5416666666666666,
+    "recall": 0.3170731707317073,
+    "f1-score": 0.39999999999999997,
+    "support": 41,
+    "confused_with": {
+      "greet": 9,
+      "deny": 7
+    }
+  },
+  "ask_who_can_apply": {
+    "precision": 0.7272727272727273,
+    "recall": 0.8,
+    "f1-score": 0.761904761904762,
+    "support": 10,
+    "confused_with": {
+      "ask_enroll": 1,
+      "ask_transferee_late_enrollee": 1
+    }
+  },
+  "ask_drop_student_process": {
+    "precision": 0.7346938775510204,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.7912087912087913,
+    "support": 42,
+    "confused_with": {
+      "ask_absence_limit": 3,
+      "ask_failing_marks": 1
+    }
+  },
+  "ask_get_enrollment_form": {
+    "precision": 0.8536585365853658,
+    "recall": 0.875,
+    "f1-score": 0.8641975308641976,
+    "support": 40,
+    "confused_with": {
+      "ask_enrollment_requirements": 2,
+      "ask_enroll": 2
+    }
+  },
+  "ask_release_after_request": {
+    "precision": 0.8048780487804879,
+    "recall": 0.7857142857142857,
+    "f1-score": 0.7951807228915663,
+    "support": 42,
+    "confused_with": {
+      "ask_process_documents_time": 6,
+      "ask_authorized_claim": 2
+    }
+  },
+  "greet": {
+    "precision": 0.6666666666666666,
+    "recall": 0.7619047619047619,
+    "f1-score": 0.7111111111111111,
+    "support": 42,
+    "confused_with": {
+      "goodbye": 3,
+      "affirm": 2
+    }
+  },
+  "ask_replace_lost_id": {
+    "precision": 0.975609756097561,
+    "recall": 0.975609756097561,
+    "f1-score": 0.975609756097561,
+    "support": 41,
+    "confused_with": {
+      "ask_replace_report_card": 1
+    }
+  },
+  "ask_process_documents_time": {
+    "precision": 0.74,
+    "recall": 0.8222222222222222,
+    "f1-score": 0.7789473684210526,
+    "support": 45,
+    "confused_with": {
+      "ask_release_after_request": 3,
+      "ask_authorized_claim": 2
+    }
+  },
+  "goodbye": {
+    "precision": 0.675,
+    "recall": 0.6585365853658537,
+    "f1-score": 0.6666666666666667,
+    "support": 41,
+    "confused_with": {
+      "deny": 4,
+      "greet": 4
+    }
+  },
+  "ask_class_standing": {
+    "precision": 0.9302325581395349,
+    "recall": 0.9523809523809523,
+    "f1-score": 0.9411764705882352,
+    "support": 42,
+    "confused_with": {
+      "ask_failing_marks": 1,
+      "ask_enrollment_requirements": 1
+    }
+  },
+  "ask_enroll": {
+    "precision": 0.5348837209302325,
+    "recall": 0.575,
+    "f1-score": 0.5542168674698795,
+    "support": 40,
+    "confused_with": {
+      "ask_enrollment_requirements": 11,
+      "ask_get_enrollment_form": 4
+    }
+  },
+  "ask_transfer_midsemester": {
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1-score": 0.9473684210526316,
+    "support": 10,
+    "confused_with": {
+      "ask_transferee_late_enrollee": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.8089461713419257,
+    "recall": 0.8083333333333333,
+    "f1-score": 0.8086396362258431,
+    "support": 1320
+  },
+  "macro avg": {
+    "precision": 0.8215797686876332,
+    "recall": 0.8139488042031762,
+    "f1-score": 0.8142015466532335,
+    "support": 1320
+  },
+  "weighted avg": {
+    "precision": 0.8115209455286623,
+    "recall": 0.8083333333333333,
+    "f1-score": 0.8067058034759611,
+    "support": 1320
+  },
+  "accuracy": 0.8083333333333333
+}

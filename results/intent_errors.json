@@ -1,0 +1,2026 @@
+[
+  {
+    "text": "yo",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9733260869979858
+    }
+  },
+  {
+    "text": "good morning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.6804254055023193
+    }
+  },
+  {
+    "text": "sup",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6959728002548218
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5845270752906799
+    }
+  },
+  {
+    "text": "hi, can we chat",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8996646404266357
+    }
+  },
+  {
+    "text": "until next time",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.5518814921379089
+    }
+  },
+  {
+    "text": "exit",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7339137196540833
+    }
+  },
+  {
+    "text": "I’ll ask next time",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.5142742991447449
+    }
+  },
+  {
+    "text": "okay, I’m out",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9879224896430969
+    }
+  },
+  {
+    "text": "of course",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.48965713381767273
+    }
+  },
+  {
+    "text": "yup, send it",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_facility_request",
+      "confidence": 0.4861963391304016
+    }
+  },
+  {
+    "text": "that's wrong",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.996971607208252
+    }
+  },
+  {
+    "text": "not what I'm asking",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9704831838607788
+    }
+  },
+  {
+    "text": "no, different topic",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.5068240761756897
+    }
+  },
+  {
+    "text": "no, another question",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5754658579826355
+    }
+  },
+  {
+    "text": "I'm referring to that",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.42676353454589844
+    }
+  },
+  {
+    "text": "gibberish message",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9864212274551392
+    }
+  },
+  {
+    "text": "this makes no sense",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.917593240737915
+    }
+  },
+  {
+    "text": "blue carpet potato",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.17834584414958954
+    }
+  },
+  {
+    "text": "error",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6990286707878113
+    }
+  },
+  {
+    "text": "ignore my message",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9969702959060669
+    }
+  },
+  {
+    "text": "??????? please",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9850026965141296
+    }
+  },
+  {
+    "text": "I want to enroll, what are the steps",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9463291764259338
+    }
+  },
+  {
+    "text": "how long is the enrollment processing",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.9970940351486206
+    }
+  },
+  {
+    "text": "where do I pass the accomplished enrollment form",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_get_enrollment_form",
+      "confidence": 0.9994889497756958
+    }
+  },
+  {
+    "text": "how do I get certificate for enrollment purposes",
+    "intent": "ask_request_school_forms",
+    "intent_prediction": {
+      "name": "ask_get_enrollment_form",
+      "confidence": 0.5333116054534912
+    }
+  },
+  {
+    "text": "how do I ask registrar for documents",
+    "intent": "ask_request_school_forms",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.45742255449295044
+    }
+  },
+  {
+    "text": "how long should I wait before claiming documents",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_authorized_claim",
+      "confidence": 0.6429715752601624
+    }
+  },
+  {
+    "text": "how do I know if there are slots available",
+    "intent": "ask_transferee_late_enrollee",
+    "intent_prediction": {
+      "name": "ask_who_can_apply",
+      "confidence": 0.3214692771434784
+    }
+  },
+  {
+    "text": "what’s the process if I enroll beyond deadline",
+    "intent": "ask_transferee_late_enrollee",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.7689012885093689
+    }
+  },
+  {
+    "text": "I want a different strand placement",
+    "intent": "ask_change_strand",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.6132282614707947
+    }
+  },
+  {
+    "text": "do I get counseling if I have low grades",
+    "intent": "ask_failing_marks",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.5260044932365417
+    }
+  },
+  {
+    "text": "how does the school address at-risk students",
+    "intent": "ask_failing_marks",
+    "intent_prediction": {
+      "name": "ask_school_address",
+      "confidence": 0.9623708128929138
+    }
+  },
+  {
+    "text": "do medical absences need proof",
+    "intent": "ask_absence_policy",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.9989712238311768
+    }
+  },
+  {
+    "text": "do I need to state purpose and schedule",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_drop_add_subjects",
+      "confidence": 0.4426012933254242
+    }
+  },
+  {
+    "text": "what’s the step after adviser endorsement",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9459489583969116
+    }
+  },
+  {
+    "text": "can I request the covered court schedule",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.9468915462493896
+    }
+  },
+  {
+    "text": "enrollment form location please",
+    "intent": "ask_get_enrollment_form",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.5119200944900513
+    }
+  },
+  {
+    "text": "I need enrollment sheet, where to request",
+    "intent": "ask_get_enrollment_form",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.7850551605224609
+    }
+  },
+  {
+    "text": "where can transferees get enrollment form",
+    "intent": "ask_get_enrollment_form",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.9174405932426453
+    }
+  },
+  {
+    "text": "do I need SF9 for enrollment",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5842794179916382
+    }
+  },
+  {
+    "text": "do I need certificate of completion for enrollment",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9199640154838562
+    }
+  },
+  {
+    "text": "what documents do I submit to registrar",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.6225809454917908
+    }
+  },
+  {
+    "text": "do I need JHS documents to enroll",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9996852874755859
+    }
+  },
+  {
+    "text": "requirement submission steps",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.6518646478652954
+    }
+  },
+  {
+    "text": "what’s the standard processing period",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.9501093029975891
+    }
+  },
+  {
+    "text": "how many days before documents are ready",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_authorized_claim",
+      "confidence": 0.6719837188720703
+    }
+  },
+  {
+    "text": "how long until my request is completed",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.725168764591217
+    }
+  },
+  {
+    "text": "do you warn students before dropping",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.9999744892120361
+    }
+  },
+  {
+    "text": "can grade 12 transferees apply",
+    "intent": "ask_who_can_apply",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.9590553641319275
+    }
+  },
+  {
+    "text": "what programs are available",
+    "intent": "ask_academic_strands",
+    "intent_prediction": {
+      "name": "ask_eligibility_requirements",
+      "confidence": 0.9053658843040466
+    }
+  },
+  {
+    "text": "can I change my strand later",
+    "intent": "ask_switch_strands_midsemester",
+    "intent_prediction": {
+      "name": "ask_change_strand",
+      "confidence": 0.9983437061309814
+    }
+  },
+  {
+    "text": "grade card",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "ask_about_school",
+      "confidence": 0.31902894377708435
+    }
+  },
+  {
+    "text": "I have a question",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.56932133436203
+    }
+  },
+  {
+    "text": "hi, quick question",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5365882515907288
+    }
+  },
+  {
+    "text": "I'm leaving now",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7308107614517212
+    }
+  },
+  {
+    "text": "end chat",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6383764147758484
+    }
+  },
+  {
+    "text": "go ahead",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.973301112651825
+    }
+  },
+  {
+    "text": "proceed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_learning_modules",
+      "confidence": 0.7660428881645203
+    }
+  },
+  {
+    "text": "that's fine",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.6603187918663025
+    }
+  },
+  {
+    "text": "incorrect",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9930714964866638
+    }
+  },
+  {
+    "text": "don't",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9934166669845581
+    }
+  },
+  {
+    "text": "no, try again",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.5761826038360596
+    }
+  },
+  {
+    "text": "pass",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9171156287193298
+    }
+  },
+  {
+    "text": "where do I go for that",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.41887035965919495
+    }
+  },
+  {
+    "text": "okay, and then what",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9890767335891724
+    }
+  },
+  {
+    "text": "...",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7388869524002075
+    }
+  },
+  {
+    "text": "I typed wrong",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9990184307098389
+    }
+  },
+  {
+    "text": "no idea what to ask",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9172427654266357
+    }
+  },
+  {
+    "text": "I need a new ID card, who do I ask",
+    "intent": "ask_replace_lost_id",
+    "intent_prediction": {
+      "name": "ask_replace_report_card",
+      "confidence": 0.6432165503501892
+    }
+  },
+  {
+    "text": "do I submit the request to my adviser",
+    "intent": "ask_replace_report_card",
+    "intent_prediction": {
+      "name": "ask_class_size",
+      "confidence": 0.5624817609786987
+    }
+  },
+  {
+    "text": "what happens after I submit the enrollment form",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_get_enrollment_form",
+      "confidence": 0.9858830571174622
+    }
+  },
+  {
+    "text": "does the registrar validate the requirements",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.990664005279541
+    }
+  },
+  {
+    "text": "enrollment requirements submission process",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9999520778656006
+    }
+  },
+  {
+    "text": "where is the enrollment committee involved",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.5098339915275574
+    }
+  },
+  {
+    "text": "what documents do I bring for enrollment",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9993377327919006
+    }
+  },
+  {
+    "text": "when will the registrar finish preparing the documents",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.872538149356842
+    }
+  },
+  {
+    "text": "do you have a standard time for releasing documents",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.6445414423942566
+    }
+  },
+  {
+    "text": "when can I get the Good Moral after requesting",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.8571458458900452
+    }
+  },
+  {
+    "text": "what’s the processing window for releasing documents",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.9998903274536133
+    }
+  },
+  {
+    "text": "I want to shift from STEM to HUMSS, what do I do",
+    "intent": "ask_change_strand",
+    "intent_prediction": {
+      "name": "ask_switch_strands_midsemester",
+      "confidence": 0.9929677248001099
+    }
+  },
+  {
+    "text": "I’m struggling academically, what’s the process",
+    "intent": "ask_failing_marks",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.5623781681060791
+    }
+  },
+  {
+    "text": "do I need to complete all SHS subjects",
+    "intent": "ask_graduation_requirements",
+    "intent_prediction": {
+      "name": "ask_drop_add_subjects",
+      "confidence": 0.9694989323616028
+    }
+  },
+  {
+    "text": "what does the property custodian do",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.9299672842025757
+    }
+  },
+  {
+    "text": "do I need birth certificate for enrollment",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.8346686959266663
+    }
+  },
+  {
+    "text": "what documents are checked during enrollment",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.641000509262085
+    }
+  },
+  {
+    "text": "do I need to pay for certified true copy",
+    "intent": "ask_certificate_fee",
+    "intent_prediction": {
+      "name": "ask_replace_report_card",
+      "confidence": 0.9866021871566772
+    }
+  },
+  {
+    "text": "is there a charge for certificate release",
+    "intent": "ask_certificate_fee",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.47797250747680664
+    }
+  },
+  {
+    "text": "how long does registrar process documents",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.9356802105903625
+    }
+  },
+  {
+    "text": "how long to process my request after logging",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_facility_request",
+      "confidence": 0.9294342398643494
+    }
+  },
+  {
+    "text": "how are scores converted to grades",
+    "intent": "ask_class_standing",
+    "intent_prediction": {
+      "name": "ask_failing_marks",
+      "confidence": 0.9504030346870422
+    }
+  },
+  {
+    "text": "attendance rule for failing or dropping",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.4572679400444031
+    }
+  },
+  {
+    "text": "how many students are there in grade 11",
+    "intent": "ask_class_size",
+    "intent_prediction": {
+      "name": "ask_who_can_apply",
+      "confidence": 0.7304607033729553
+    }
+  },
+  {
+    "text": "how many students are there in grade 12",
+    "intent": "ask_class_size",
+    "intent_prediction": {
+      "name": "ask_who_can_apply",
+      "confidence": 0.7304607033729553
+    }
+  },
+  {
+    "text": "what are the requirements for stem",
+    "intent": "ask_eligibility_requirements",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.8216177821159363
+    }
+  },
+  {
+    "text": "coe",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5201939344406128
+    }
+  },
+  {
+    "text": "are you there",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.46388259530067444
+    }
+  },
+  {
+    "text": "/stop",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "we’re done here",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6810358762741089
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6551809310913086
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9996230602264404
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.6033035516738892
+    }
+  },
+  {
+    "text": "sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5527632832527161
+    }
+  },
+  {
+    "text": "nah",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.7389262914657593
+    }
+  },
+  {
+    "text": "no thanks",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9519039392471313
+    }
+  },
+  {
+    "text": "stop that",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7111452221870422
+    }
+  },
+  {
+    "text": "I disagree",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9875183701515198
+    }
+  },
+  {
+    "text": "mali",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.8993736505508423
+    }
+  },
+  {
+    "text": "can you break it down",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "ask_class_standing",
+      "confidence": 0.8471350073814392
+    }
+  },
+  {
+    "text": "sing a song",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.38351601362228394
+    }
+  },
+  {
+    "text": "open the portal",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6791375875473022
+    }
+  },
+  {
+    "text": "I want food",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9995471835136414
+    }
+  },
+  {
+    "text": "can registrar release a certified true copy",
+    "intent": "ask_replace_report_card",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.8842437267303467
+    }
+  },
+  {
+    "text": "how to submit birth certificate for enrollment",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.969822108745575
+    }
+  },
+  {
+    "text": "I need help enrolling",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9202054738998413
+    }
+  },
+  {
+    "text": "I want to enroll today, what do I do first",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9889032244682312
+    }
+  },
+  {
+    "text": "how long until I can pick up my documents",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.7296911478042603
+    }
+  },
+  {
+    "text": "is there a processing period for release",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.9781021475791931
+    }
+  },
+  {
+    "text": "is it 3 to 7 days for release",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.9359908103942871
+    }
+  },
+  {
+    "text": "can I enroll after classes start",
+    "intent": "ask_transferee_late_enrollee",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9961214661598206
+    }
+  },
+  {
+    "text": "how to request strand transfer",
+    "intent": "ask_change_strand",
+    "intent_prediction": {
+      "name": "ask_switch_strands_midsemester",
+      "confidence": 0.7976301908493042
+    }
+  },
+  {
+    "text": "strand reassignment request",
+    "intent": "ask_change_strand",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.7779728174209595
+    }
+  },
+  {
+    "text": "can I improve after intervention",
+    "intent": "ask_failing_marks",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.2932988703250885
+    }
+  },
+  {
+    "text": "dropping process for excessive absences",
+    "intent": "ask_drop_student_process",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.9962924122810364
+    }
+  },
+  {
+    "text": "who attends the parent/guardian conference",
+    "intent": "ask_drop_student_process",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.5865123867988586
+    }
+  },
+  {
+    "text": "does due process mean hearings or meetings",
+    "intent": "ask_drop_student_process",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7978113889694214
+    }
+  },
+  {
+    "text": "who handles excuses, adviser or registrar",
+    "intent": "ask_absence_policy",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.41429781913757324
+    }
+  },
+  {
+    "text": "I was absent yesterday, what do I submit",
+    "intent": "ask_absence_policy",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.9371005296707153
+    }
+  },
+  {
+    "text": "I was absent for 3 days, what do I do",
+    "intent": "ask_absence_policy",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.9900218844413757
+    }
+  },
+  {
+    "text": "how does attendance record get corrected",
+    "intent": "ask_absence_policy",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.9994242191314697
+    }
+  },
+  {
+    "text": "how to request the auditorium",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.998619794845581
+    }
+  },
+  {
+    "text": "does the subject teacher endorse the request",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.5723537802696228
+    }
+  },
+  {
+    "text": "does the school head give final approval",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.575249195098877
+    }
+  },
+  {
+    "text": "what happens after school head approves",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.7983493804931641
+    }
+  },
+  {
+    "text": "how do I book the stage area",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_learning_modules",
+      "confidence": 0.7266913056373596
+    }
+  },
+  {
+    "text": "does registrar evaluate requirements",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_graduation_requirements",
+      "confidence": 0.48030030727386475
+    }
+  },
+  {
+    "text": "does the registrar check identity before releasing",
+    "intent": "ask_authorized_claim",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.9746260046958923
+    }
+  },
+  {
+    "text": "what is allowed for document claiming",
+    "intent": "ask_authorized_claim",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.9027601480484009
+    }
+  },
+  {
+    "text": "do I need to bring money for requesting forms",
+    "intent": "ask_certificate_fee",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.9626303315162659
+    }
+  },
+  {
+    "text": "are quizzes part of written works",
+    "intent": "ask_class_standing",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.4305524230003357
+    }
+  },
+  {
+    "text": "is it true that exceeding 20% can lead to dropping",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_drop_add_subjects",
+      "confidence": 0.4919012784957886
+    }
+  },
+  {
+    "text": "do I get counseling if I’m absent too much",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_failing_marks",
+      "confidence": 0.3667307496070862
+    }
+  },
+  {
+    "text": "can students be dropped for frequent absences",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.6119933128356934
+    }
+  },
+  {
+    "text": "will I be called for counseling if absent often",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_failing_marks",
+      "confidence": 0.7478224039077759
+    }
+  },
+  {
+    "text": "how do I reach the school",
+    "intent": "ask_contact_information",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.4220501482486725
+    }
+  },
+  {
+    "text": "how do I call the school",
+    "intent": "ask_contact_information",
+    "intent_prediction": {
+      "name": "ask_school_address",
+      "confidence": 0.8333712220191956
+    }
+  },
+  {
+    "text": "what should I know about the school",
+    "intent": "ask_about_school",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.5449737906455994
+    }
+  },
+  {
+    "text": "what strand can I take",
+    "intent": "ask_academic_strands",
+    "intent_prediction": {
+      "name": "ask_change_strand",
+      "confidence": 0.9415944814682007
+    }
+  },
+  {
+    "text": "can I transfer in",
+    "intent": "ask_transfer_midsemester",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.8748434782028198
+    }
+  },
+  {
+    "text": "gm",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.8233663439750671
+    }
+  },
+  {
+    "text": "greetings",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.902751088142395
+    }
+  },
+  {
+    "text": "I have to go",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8852471113204956
+    }
+  },
+  {
+    "text": "exactly",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9184781312942505
+    }
+  },
+  {
+    "text": "please do",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.7798851728439331
+    }
+  },
+  {
+    "text": "tama",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.3522789180278778
+    }
+  },
+  {
+    "text": "that works",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.5520437955856323
+    }
+  },
+  {
+    "text": "never mind",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.48911112546920776
+    }
+  },
+  {
+    "text": "about that topic",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6450188159942627
+    }
+  },
+  {
+    "text": "I don't know",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9978488683700562
+    }
+  },
+  {
+    "text": "lol what",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.962722897529602
+    }
+  },
+  {
+    "text": "help",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.992033064365387
+    }
+  },
+  {
+    "text": "what",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.9357837438583374
+    }
+  },
+  {
+    "text": "??? hello",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9999527931213379
+    }
+  },
+  {
+    "text": "banana airplane",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.5389419198036194
+    }
+  },
+  {
+    "text": "you are confusing",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4089198410511017
+    }
+  },
+  {
+    "text": "uhhhh",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.43980079889297485
+    }
+  },
+  {
+    "text": "do I need encoding of records for enrollment",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9983116388320923
+    }
+  },
+  {
+    "text": "what does the registrar check during enrollment",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.7703055143356323
+    }
+  },
+  {
+    "text": "can I enroll if I’m a new student",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.6551077365875244
+    }
+  },
+  {
+    "text": "do I need JHS certificate of completion for enrollment",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9999711513519287
+    }
+  },
+  {
+    "text": "what are the steps before document release",
+    "intent": "ask_request_school_forms",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.998302698135376
+    }
+  },
+  {
+    "text": "after I submit a request, when can I claim it",
+    "intent": "ask_release_after_request",
+    "intent_prediction": {
+      "name": "ask_authorized_claim",
+      "confidence": 0.6593777537345886
+    }
+  },
+  {
+    "text": "can you explain the transfer enrollment flow",
+    "intent": "ask_transferee_late_enrollee",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.574131965637207
+    }
+  },
+  {
+    "text": "what if my grade is below passing",
+    "intent": "ask_failing_marks",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.4700440764427185
+    }
+  },
+  {
+    "text": "how to check if I completed required units",
+    "intent": "ask_graduation_requirements",
+    "intent_prediction": {
+      "name": "ask_uniform_cost",
+      "confidence": 0.49491405487060547
+    }
+  },
+  {
+    "text": "who should I talk to about dropping a subject",
+    "intent": "ask_drop_add_subjects",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.8206536769866943
+    }
+  },
+  {
+    "text": "dropping and adding procedure explanation",
+    "intent": "ask_drop_add_subjects",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.938161313533783
+    }
+  },
+  {
+    "text": "can a student be dropped due to absences",
+    "intent": "ask_drop_student_process",
+    "intent_prediction": {
+      "name": "ask_absence_limit",
+      "confidence": 0.9935283064842224
+    }
+  },
+  {
+    "text": "is it required that parent signs the letter",
+    "intent": "ask_absence_policy",
+    "intent_prediction": {
+      "name": "ask_authorized_claim",
+      "confidence": 0.580525279045105
+    }
+  },
+  {
+    "text": "do we get confirmation after approval",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.24525433778762817
+    }
+  },
+  {
+    "text": "enrollment form claiming process",
+    "intent": "ask_get_enrollment_form",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.8972344994544983
+    }
+  },
+  {
+    "text": "what papers are required for enrollment",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.9644973874092102
+    }
+  },
+  {
+    "text": "is compliance confirmed before enrollment",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.6873000860214233
+    }
+  },
+  {
+    "text": "what are the standard enrollment documents",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.8757282495498657
+    }
+  },
+  {
+    "text": "do transferees have different requirements",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.5789071321487427
+    }
+  },
+  {
+    "text": "what to prepare for enrollment verification",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.2507014274597168
+    }
+  },
+  {
+    "text": "do both parties need to provide IDs",
+    "intent": "ask_authorized_claim",
+    "intent_prediction": {
+      "name": "ask_certificate_fee",
+      "confidence": 0.42456310987472534
+    }
+  },
+  {
+    "text": "do I pay for document processing",
+    "intent": "ask_certificate_fee",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.9203161597251892
+    }
+  },
+  {
+    "text": "is there a cost for school form issuance",
+    "intent": "ask_certificate_fee",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.9436497092247009
+    }
+  },
+  {
+    "text": "how soon are documents processed",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.7875208258628845
+    }
+  },
+  {
+    "text": "can I claim within a week if processed fast",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_authorized_claim",
+      "confidence": 0.92562335729599
+    }
+  },
+  {
+    "text": "what is the allowed absence rate",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_absence_policy",
+      "confidence": 0.9957706332206726
+    }
+  },
+  {
+    "text": "how does the school handle excessive absences",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.8758721947669983
+    }
+  },
+  {
+    "text": "school email address",
+    "intent": "ask_contact_information",
+    "intent_prediction": {
+      "name": "ask_school_address",
+      "confidence": 0.8595820665359497
+    }
+  },
+  {
+    "text": "school hotline",
+    "intent": "ask_contact_information",
+    "intent_prediction": {
+      "name": "ask_about_school",
+      "confidence": 0.8046209812164307
+    }
+  },
+  {
+    "text": "who can enroll",
+    "intent": "ask_who_can_apply",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.7745798230171204
+    }
+  },
+  {
+    "text": "can I shift strands",
+    "intent": "ask_switch_strands_midsemester",
+    "intent_prediction": {
+      "name": "ask_change_strand",
+      "confidence": 0.7740204334259033
+    }
+  },
+  {
+    "text": "how big is each class",
+    "intent": "ask_class_size",
+    "intent_prediction": {
+      "name": "ask_class_standing",
+      "confidence": 0.6211732625961304
+    }
+  },
+  {
+    "text": "hello",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.9997490048408508
+    }
+  },
+  {
+    "text": "ciao",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6189681887626648
+    }
+  },
+  {
+    "text": "that's all, thanks",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9633409380912781
+    }
+  },
+  {
+    "text": "thank you, that's all",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8244249820709229
+    }
+  },
+  {
+    "text": "will message again later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7707284688949585
+    }
+  },
+  {
+    "text": "I’m logging off",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.7917055487632751
+    }
+  },
+  {
+    "text": "alright",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9821765422821045
+    }
+  },
+  {
+    "text": "yes, that's what I mean",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.8974703550338745
+    }
+  },
+  {
+    "text": "affirmative",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "ask_drop_add_subjects",
+      "confidence": 0.19570498168468475
+    }
+  },
+  {
+    "text": "I agree",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9340881705284119
+    }
+  },
+  {
+    "text": "okay, do that",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.917751669883728
+    }
+  },
+  {
+    "text": "wag",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "fallback",
+      "confidence": 0.7690034508705139
+    }
+  },
+  {
+    "text": "can you repeat that",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6003642678260803
+    }
+  },
+  {
+    "text": "repeat it please",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4817934036254883
+    }
+  },
+  {
+    "text": "what’s included in that",
+    "intent": "pronoun_followup",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.694126546382904
+    }
+  },
+  {
+    "text": "idk",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6220712661743164
+    }
+  },
+  {
+    "text": "wut",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4857933819293976
+    }
+  },
+  {
+    "text": "are you real",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9726860523223877
+    }
+  },
+  {
+    "text": "speak human",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "pronoun_followup",
+      "confidence": 0.5170077681541443
+    }
+  },
+  {
+    "text": "not working",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9984266757965088
+    }
+  },
+  {
+    "text": "broken",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "ask_school_address",
+      "confidence": 0.21347427368164062
+    }
+  },
+  {
+    "text": "just testing",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.590038001537323
+    }
+  },
+  {
+    "text": "can you do magic",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.42793726921081543
+    }
+  },
+  {
+    "text": "I need a duplicate report card",
+    "intent": "ask_replace_report_card",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7786996960639954
+    }
+  },
+  {
+    "text": "where do I start enrollment",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_get_enrollment_form",
+      "confidence": 0.9136531949043274
+    }
+  },
+  {
+    "text": "enrollment procedure please",
+    "intent": "ask_enroll",
+    "intent_prediction": {
+      "name": "ask_get_enrollment_form",
+      "confidence": 0.9208104610443115
+    }
+  },
+  {
+    "text": "how to get school forms like SF9, SF10 and F137",
+    "intent": "ask_request_school_forms",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9792039394378662
+    }
+  },
+  {
+    "text": "is school head approval needed for forms",
+    "intent": "ask_request_school_forms",
+    "intent_prediction": {
+      "name": "ask_academic_strands",
+      "confidence": 0.4733985364437103
+    }
+  },
+  {
+    "text": "I need a copy of school form, steps please",
+    "intent": "ask_request_school_forms",
+    "intent_prediction": {
+      "name": "ask_replace_report_card",
+      "confidence": 0.4777953326702118
+    }
+  },
+  {
+    "text": "is enrollment subject to slot availability",
+    "intent": "ask_transferee_late_enrollee",
+    "intent_prediction": {
+      "name": "ask_get_enrollment_form",
+      "confidence": 0.4900113344192505
+    }
+  },
+  {
+    "text": "what is required for late enrollment",
+    "intent": "ask_transferee_late_enrollee",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9892966151237488
+    }
+  },
+  {
+    "text": "does the school provide academic support",
+    "intent": "ask_failing_marks",
+    "intent_prediction": {
+      "name": "ask_replace_report_card",
+      "confidence": 0.63232421875
+    }
+  },
+  {
+    "text": "what happens after my records are verified",
+    "intent": "ask_graduation_requirements",
+    "intent_prediction": {
+      "name": "ask_failing_marks",
+      "confidence": 0.7427988052368164
+    }
+  },
+  {
+    "text": "does guidance office conduct counseling first",
+    "intent": "ask_drop_student_process",
+    "intent_prediction": {
+      "name": "ask_process_documents_time",
+      "confidence": 0.43955785036087036
+    }
+  },
+  {
+    "text": "what is the step after counseling",
+    "intent": "ask_drop_student_process",
+    "intent_prediction": {
+      "name": "ask_failing_marks",
+      "confidence": 0.8860747814178467
+    }
+  },
+  {
+    "text": "does my adviser need to endorse the request",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_uniform_cost",
+      "confidence": 0.3822464346885681
+    }
+  },
+  {
+    "text": "what details should be in the request",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.9059624671936035
+    }
+  },
+  {
+    "text": "can I request the lab room for project work",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.8702274560928345
+    }
+  },
+  {
+    "text": "where do I send the written request",
+    "intent": "ask_facility_request",
+    "intent_prediction": {
+      "name": "ask_class_standing",
+      "confidence": 0.6940790414810181
+    }
+  },
+  {
+    "text": "which department releases enrollment forms",
+    "intent": "ask_get_enrollment_form",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.8663881421089172
+    }
+  },
+  {
+    "text": "what is needed for enrollment submission",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9997262358665466
+    }
+  },
+  {
+    "text": "I want to enroll, what should I bring",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9851710200309753
+    }
+  },
+  {
+    "text": "do I need valid ID to enroll",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_replace_lost_id",
+      "confidence": 0.9665488600730896
+    }
+  },
+  {
+    "text": "what’s required before enrollment becomes official",
+    "intent": "ask_enrollment_requirements",
+    "intent_prediction": {
+      "name": "ask_enroll",
+      "confidence": 0.9825223684310913
+    }
+  },
+  {
+    "text": "can my sibling claim my requested documents",
+    "intent": "ask_authorized_claim",
+    "intent_prediction": {
+      "name": "ask_release_after_request",
+      "confidence": 0.6970593333244324
+    }
+  },
+  {
+    "text": "do I need official receipt for document request",
+    "intent": "ask_certificate_fee",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.996526300907135
+    }
+  },
+  {
+    "text": "how long does the registrar take to prepare documents",
+    "intent": "ask_process_documents_time",
+    "intent_prediction": {
+      "name": "ask_enrollment_requirements",
+      "confidence": 0.9659793376922607
+    }
+  },
+  {
+    "text": "how many days can I be absent in a quarter",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_absence_policy",
+      "confidence": 0.9914542436599731
+    }
+  },
+  {
+    "text": "is there due process for dropping due to absences",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_drop_student_process",
+      "confidence": 0.9996984004974365
+    }
+  },
+  {
+    "text": "does the adviser track attendance daily",
+    "intent": "ask_absence_limit",
+    "intent_prediction": {
+      "name": "ask_absence_policy",
+      "confidence": 0.8575964570045471
+    }
+  },
+  {
+    "text": "where can I find the school",
+    "intent": "ask_school_address",
+    "intent_prediction": {
+      "name": "ask_contact_information",
+      "confidence": 0.7316619753837585
+    }
+  },
+  {
+    "text": "can I transfer to another strand",
+    "intent": "ask_switch_strands_midsemester",
+    "intent_prediction": {
+      "name": "ask_transferee_late_enrollee",
+      "confidence": 0.4279792010784149
+    }
+  },
+  {
+    "text": "can I move from stem to humss",
+    "intent": "ask_switch_strands_midsemester",
+    "intent_prediction": {
+      "name": "ask_eligibility_requirements",
+      "confidence": 0.5677018165588379
+    }
+  },
+  {
+    "text": "do you offer online classes",
+    "intent": "ask_learning_modes",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.961187481880188
+    }
+  },
+  {
+    "text": "can students study online",
+    "intent": "ask_learning_modes",
+    "intent_prediction": {
+      "name": "ask_request_school_forms",
+      "confidence": 0.9974173307418823
+    }
+  }
+]

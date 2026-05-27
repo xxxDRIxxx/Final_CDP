@@ -1,0 +1,1291 @@
+[
+  {
+    "text": "I need another copy of my report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 26,
+        "end": 37,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need to write a letter for report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 32,
+        "end": 43,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "does the registrar handle report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 26,
+        "end": 37,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "is school head approval needed for report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 35,
+        "end": 46,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how do I get a replacement SF9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 27,
+        "end": 30,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what steps for replacing lost SF9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 30,
+        "end": 33,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what’s the first step if report card is lost",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 25,
+        "end": 36,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can you tell me the procedure for lost report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 39,
+        "end": 50,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "where do I submit my SF9 for enrollment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 21,
+        "end": 24,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I need Good Moral, how do I request it",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 17,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need SF9 for enrollment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 10,
+        "end": 13,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can I send someone else to get my F137",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 38,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "enrollment certificate",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "enrollment certificate",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 22,
+        "confidence_entity": 0.6287983059883118,
+        "value": "certificate of enrollment",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "report card replacement process please",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 11,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "who endorses the report card replacement request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 17,
+        "end": 28,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to request my report card again",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 21,
+        "end": 32,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "my report card was misplaced, steps please",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 3,
+        "end": 14,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "where can I get a replacement report card released",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 30,
+        "end": 41,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "lost report card, who approves",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 5,
+        "end": 16,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can I get a certified report card copy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 22,
+        "end": 33,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to request SF9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 18,
+        "end": 21,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to request report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 18,
+        "end": 29,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to request F137",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 18,
+        "end": 22,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what office processes Good Moral requests",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 22,
+        "end": 32,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "when can I get the Good Moral after requesting",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 19,
+        "end": 29,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can I send someone else to get my SF10",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 38,
+        "value": "sf10",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can I send someone else to get Good Moral",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 31,
+        "end": 41,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need payment for report card request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 22,
+        "end": 33,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "processing timeline for SF9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 27,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "processing timeline for SF10",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 28,
+        "value": "sf10",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "student permanent record",
+    "entities": [
+      {
+        "start": 0,
+        "end": 24,
+        "value": "student permanent record",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9742844700813293,
+        "value": "student",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "document_type",
+        "start": 8,
+        "end": 24,
+        "confidence_entity": 0.8072841763496399,
+        "value": "permanent record",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can I request a certified true copy of my report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 42,
+        "end": 53,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "my SF9 is missing, what should I do",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 3,
+        "end": 6,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "where do I request a replacement report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 33,
+        "end": 44,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I need proof of grades, can I replace the report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 42,
+        "end": 53,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how do I request another report card copy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 25,
+        "end": 36,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what are the offices involved for report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 45,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "when will SF9 be released after request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 10,
+        "end": 13,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "is Good Moral free",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 3,
+        "end": 13,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "gm",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "gm",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "permanent record f137",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "permanent record f137",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 17,
+        "end": 21,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 16,
+        "confidence_entity": 0.5954810976982117,
+        "value": "permanent record",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "document_type",
+        "start": 17,
+        "end": 21,
+        "confidence_entity": 0.9995656609535217,
+        "value": "f137",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how do I replace a lost report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 35,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I can’t find my report card, what’s the process",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 16,
+        "end": 27,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what office releases the certified copy of report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 43,
+        "end": 54,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "where to submit the written request for report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 40,
+        "end": 51,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need adviser endorsement for report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 45,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "my report card got damaged, can I request a replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 3,
+        "end": 14,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "is there a written request required for report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 40,
+        "end": 51,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what’s the timeline for replacing report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 45,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to request Certificate of Enrollment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 15,
+        "end": 40,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I need Good Moral for requirements, how to request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 17,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "when is Certificate of Enrollment released",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 8,
+        "end": 33,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "when will SF10 be released after request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 10,
+        "end": 14,
+        "value": "sf10",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "when will F137 be released after request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 10,
+        "end": 14,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can I send someone else to get SF9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 31,
+        "end": 34,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can I send someone else to get my report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 45,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can my parent claim my certificate of enrollment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 23,
+        "end": 48,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need payment for SF9 request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 22,
+        "end": 25,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need payment for F137 request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 22,
+        "end": 26,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "processing timeline for Certificate of Enrollment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 49,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I lost my report card, how can I replace it",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 10,
+        "end": 21,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "who do I talk to for report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 21,
+        "end": 32,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I need a duplicate report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 19,
+        "end": 30,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "replacement request for report card, how",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 35,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to process report card replacement",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 15,
+        "end": 26,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can the school issue a certified copy of SF9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 41,
+        "end": 44,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I need a new SF9 copy, what do I do",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 13,
+        "end": 16,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to request SF10",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 18,
+        "end": 22,
+        "value": "sf10",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to get school forms like SF9, SF10 and F137",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 43,
+        "end": 47,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "document_type",
+        "start": 34,
+        "end": 38,
+        "value": "sf10",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "document_type",
+        "start": 29,
+        "end": 32,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do you charge for Certificate of Enrollment",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 18,
+        "end": 43,
+        "value": "certificate of enrollment",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "do I need payment for SF10 request",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 22,
+        "end": 26,
+        "value": "sf10",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "processing timeline for Good Moral",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 34,
+        "value": "good moral",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "processing timeline for report card",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 35,
+        "value": "report card",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "processing timeline for F137",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 24,
+        "end": 28,
+        "value": "f137",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "school form 9",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "school form 9",
+        "entity": "document_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 13,
+        "value": "sf9",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "document_type",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.7865167260169983,
+        "value": "school",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "document_type",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.9964898228645325,
+        "value": "sf9",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

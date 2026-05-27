@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+
+  - story: document request then specify document
+    steps:
+      - intent: ask_request_school_forms
+      - action: utter_ask_document_type
+      - intent: inform
+      - action: action_route_document_type
+
+  - story: pronoun followup after faq
+    steps:
+      - intent: ask_replace_lost_id
+      - action: action_set_topic
+      - action: utter_replace_lost_id
+      - action: action_suggest_followups
+      - intent: pronoun_followup
+      - action: action_handle_pronoun
+
+  - story: pronoun followup after enrollment
+    steps:
+      - intent: ask_enroll
+      - action: action_set_topic
+      - action: utter_enroll
+      - action: action_suggest_followups
+      - intent: pronoun_followup
+      - action: action_handle_pronoun
+
+  - story: pronoun followup after document processing
+    steps:
+      - intent: ask_process_documents_time
+      - action: action_set_topic
+      - action: utter_process_documents_time
+      - action: action_suggest_followups
+      - intent: pronoun_followup
+      - action: action_handle_pronoun
+
+  - story: about school then ask address
+    steps:
+      - intent: ask_about_school
+      - action: action_set_topic
+      - action: utter_about_school
+      - action: action_suggest_followups
+      - intent: ask_school_address
+      - action: action_set_topic
+      - action: utter_school_address
+      - action: action_suggest_followups

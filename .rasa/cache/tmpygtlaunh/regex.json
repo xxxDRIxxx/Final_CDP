@@ -1,0 +1,54 @@
+[
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bcert\\s+of\\s+enrollment\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bcertificate\\s+of\\s+enrollment\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bcoe\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bf[\\s\\-]*137\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bform[\\s\\-]*10\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bform[\\s\\-]*137\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bform[\\s\\-]*9\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bgood\\s*moral\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bgood\\s*moral\\s*certificate\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bgrade\\s*card\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\breport\\s*card\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bsf[\\s\\-]*10\\b"
+  },
+  {
+    "name": "document_type",
+    "pattern": "(?i)\\bsf[\\s\\-]*9\\b"
+  }
+]

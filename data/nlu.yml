@@ -1,0 +1,1506 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - heya
+      - yo
+      - good morning
+      - good afternoon
+      - good evening
+      - hi there
+      - hello there
+      - hey there
+      - sup
+      - what's up
+      - kumusta
+      - uy hello
+      - uy hi
+      - hi po
+      - hello po
+      - hey po
+      - magandang umaga
+      - magandang hapon
+      - magandang gabi
+      - greetings
+      - hi UniWiseGPT
+      - hello UniWiseGPT
+      - hey UniWiseGPT
+      - anyone there
+      - are you there
+      - can you help me
+      - I need help
+      - I have a question
+      - may I ask something
+      - can I ask something
+      - good day
+      - hi boss
+      - hi friend
+      - hello friend
+      - hi, quick question
+      - hello, I need info
+      - hey, I need assistance
+      - hi, can we chat
+      - hello, are you available
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you
+      - see you later
+      - talk to you later
+      - thanks bye
+      - thank you, bye
+      - ok bye
+      - bye for now
+      - I'm leaving now
+      - I have to go
+      - gotta go
+      - catch you later
+      - until next time
+      - see ya
+      - ciao
+      - bye bye
+      - that's all, thanks
+      - I'm done, thanks
+      - end chat
+      - exit
+      - stop
+      - /stop
+      - alright bye
+      - okay goodbye
+      - thank you, that's all
+      - thanks, I'm good now
+      - I’ll come back later
+      - will message again later
+      - I’ll ask next time
+      - I’m logging off
+      - signing off
+      - we’re done here
+      - okay, I’m out
+      - goodbye UniWiseGPT
+      - bye UniWiseGPT
+      - see you UniWiseGPT
+      - okay thanks bye
+      - thanks for the help, bye
+      - got it, goodbye
+      - alright, see you
+
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - yep
+      - yup
+      - y
+      - sure
+      - okay
+      - ok
+      - alright
+      - correct
+      - that's right
+      - exactly
+      - indeed
+      - absolutely
+      - definitely
+      - of course
+      - please do
+      - go ahead
+      - continue
+      - proceed
+      - yes please
+      - yep please
+      - okay please
+      - yes, that's what I mean
+      - yes that's it
+      - yep that’s it
+      - tama
+      - oo
+      - oo nga
+      - yes po
+      - sure po
+      - affirmative
+      - I agree
+      - that works
+      - sounds good
+      - that's fine
+      - okay, do that
+      - yes, continue
+      - yes, show me
+      - yup, send it
+      - yes, that answer
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - nah
+      - n
+      - not really
+      - not that
+      - that's wrong
+      - incorrect
+      - I don't think so
+      - no thanks
+      - not now
+      - never mind
+      - don't
+      - stop that
+      - not exactly
+      - that's not what I meant
+      - not what I'm asking
+      - not this
+      - not that one
+      - not needed
+      - I disagree
+      - negative
+      - no, different topic
+      - no, that's not it
+      - no, try again
+      - mali
+      - hindi
+      - hindi po
+      - wag
+      - pass
+      - no please
+      - I said no
+      - not correct
+      - that's not correct
+      - no, another question
+      - no, skip that
+      - not applicable
+      - not for me
+      - no, not enrollment
+      - no, not documents
+
+  - intent: pronoun_followup
+    examples: |
+      - what about it
+      - what about that
+      - what about this
+      - can you explain that
+      - can you explain it again
+      - can you repeat that
+      - repeat it please
+      - clarify that
+      - clarify it
+      - elaborate on that
+      - elaborate more
+      - tell me more about that
+      - tell me more about it
+      - what do you mean by that
+      - what does that mean
+      - what does it mean
+      - I mean that one
+      - I'm referring to that
+      - I'm talking about that
+      - about that topic
+      - about the last one
+      - can you restate that
+      - say it again
+      - can you simplify it
+      - make it simpler
+      - explain in simple terms
+      - can you break it down
+      - can you give more details
+      - more details please
+      - more info on that
+      - can you expand on it
+      - can you be more specific
+      - what’s the next step for that
+      - what’s included in that
+      - where do I go for that
+      - who should I talk to for that
+      - what office handles that
+      - what's the process for that again
+      - okay, and then what
+      - and after that
+      - what happens next
+
+  - intent: fallback
+    examples: |
+      - ???
+      - ?????
+      - ...
+      - hmm???
+      - asdasdasd
+      - qweqweqwe
+      - random
+      - idk
+      - I don't know
+      - whatever
+      - lol what
+      - help
+      - huh
+      - what
+      - wut
+      - ??? hello
+      - are you real
+      - gibberish message
+      - this makes no sense
+      - banana airplane
+      - blue carpet potato
+      - speak human
+      - you are confusing
+      - not working
+      - error
+      - broken
+      - what is life
+      - just testing
+      - test test test
+      - I typed wrong
+      - ignore my message
+      - no idea what to ask
+      - can you do magic
+      - tell me a joke
+      - sing a song
+      - open the portal
+      - I want food
+      - hmmmmm
+      - okkkkk
+      - ??????? please
+      - uhhhh
+
+  - intent: ask_replace_lost_id
+    examples: |
+      - I lost my school ID, what should I do
+      - how do I replace a lost ID
+      - lost my ID card, what's the process
+      - my school ID is missing, how can I get a new one
+      - I can’t find my ID, where do I report it
+      - what office should I go to for lost ID
+      - who do I inform if my ID is lost
+      - I misplaced my student ID, how to replace
+      - I need an ID replacement
+      - how to request a new student ID
+      - my ID got lost, do I tell my adviser
+      - do I need approval for ID replacement
+      - how do I get a temporary gate pass if my ID is missing
+      - can admin issue a new ID
+      - what are the steps for replacing the ID
+      - where can I get the ID replacement request form
+      - ID replacement form where to get it
+      - my ID was stolen, what’s the procedure
+      - I lost my ID yesterday, what do I do first
+      - who approves the ID replacement
+      - does the school head need to approve ID replacement
+      - I need a replacement ID ASAP, what should I do
+      - can my class adviser help with lost ID
+      - how to secure the ID replacement request
+      - what is the process for lost ID in school
+      - where do I submit the ID replacement request
+      - do I need admin verification for ID replacement
+      - how long before I get a new ID after I lose it
+      - can I get a gate pass while waiting for my ID
+      - what’s required for ID replacement
+      - is there a form for ID replacement
+      - do I need to report lost ID immediately
+      - my ID is gone, steps please
+      - where do I start if I lost my ID
+      - I need a new ID card, who do I ask
+      - adviser endorsement for ID replacement?
+      - admin record verification for ID replacement?
+      - school head approval for ID replacement?
+      - how to replace missing ID card
+      - student ID replacement process please
+      - lost ID, what are the offices involved
+
+  - intent: ask_replace_report_card
+    examples: |
+      - I lost my report card, how can I replace it
+      - how do I replace a lost report card
+      - I need another copy of my report card
+      - can I request a certified true copy of my report card
+      - my SF9 is missing, what should I do
+      - I can’t find my report card, what’s the process
+      - where do I request a replacement report card
+      - who do I talk to for report card replacement
+      - do I need to write a letter for report card replacement
+      - do I submit the request to my adviser
+      - does the registrar handle report card replacement
+      - is school head approval needed for report card replacement
+      - how do I get a replacement SF9
+      - what steps for replacing lost SF9
+      - I lost my grades card, how do I request a new one
+      - what office releases the certified copy of report card
+      - can registrar release a certified true copy
+      - what’s the first step if report card is lost
+      - I need proof of grades, can I replace the report card
+      - where to submit the written request for report card
+      - report card replacement process please
+      - I lost my card last year, how do I replace it
+      - how do I request another report card copy
+      - can you tell me the procedure for lost report card
+      - who endorses the report card replacement request
+      - do I need adviser endorsement for report card replacement
+      - how to get certified true copy from registrar
+      - what are the offices involved for report card replacement
+      - I need a duplicate report card
+      - my report card got damaged, can I request a replacement
+      - replacement request for report card, how
+      - is there a written request required for report card
+      - I want to request my report card again
+      - my report card was misplaced, steps please
+      - where can I get a replacement report card released
+      - how to process report card replacement
+      - what’s the timeline for replacing report card
+      - can the school issue a certified copy of SF9
+      - I need a new SF9 copy, what do I do
+      - lost report card, who approves
+      - can I get a certified report card copy
+
+  - intent: ask_enroll
+    examples: |
+      - how do I enroll
+      - what is the enrollment process
+      - I want to enroll, what are the steps
+      - where do I start enrollment
+      - how to enroll in this school
+      - can you guide me on enrollment
+      - what office handles enrollment
+      - what happens after I submit the enrollment form
+      - does the registrar validate the requirements
+      - do I need guidance for strand placement
+      - what are the steps for official enrollment
+      - enrollment procedure please
+      - how to become officially enrolled
+      - who confirms strand placement
+      - do I need encoding of records for enrollment
+      - can you explain the enrollment steps from start to finish
+      - enrollment requirements submission process
+      - where do I submit my SF9 for enrollment
+      - I’m applying, how do I enroll properly
+      - what does the registrar check during enrollment
+      - how long is the enrollment processing
+      - who should I talk to for enrollment concerns
+      - where is the enrollment committee involved
+      - can I enroll if I’m a new student
+      - how do I enroll as an applicant
+      - what documents do I bring for enrollment
+      - how to submit birth certificate for enrollment
+      - do I need JHS certificate of completion for enrollment
+      - what’s the step after guidance confirms my strand
+      - what does “officially enrolled” mean
+      - can you list the enrollment steps clearly
+      - I’m a parent, how do I enroll my child
+      - enrollment instructions please
+      - I need help enrolling
+      - where do I pass the accomplished enrollment form
+      - who evaluates submitted enrollment records
+      - when does enrollment become final
+      - I want to enroll today, what do I do first
+      - enrollment process for senior high please
+      - how to enroll for SHS
+
+  - intent: ask_request_school_forms
+    examples: |
+      - how do I request school forms
+      - I need Good Moral, how do I request it
+      - how to request Certificate of Enrollment
+      - I want to request SF9
+      - I want to request report card
+      - I want to request SF10
+      - I want to request F137
+      - how do I request school records
+      - what is the process to request documents from registrar
+      - where can I request certificates
+      - I need a school certification, how do I get it
+      - how to request a document from the school
+      - how to request a certified document
+      - I need a form, what should I do
+      - how do I request my school files
+      - where do I get the request form for documents
+      - is there a document request form
+      - how do I submit a document request
+      - can you show the steps for requesting documents
+      - what office processes Good Moral requests
+      - how do I get certificate for enrollment purposes
+      - request process for school certificates please
+      - I need a registrar document request guide
+      - how to get school forms like SF9, SF10 and F137
+      - I need a school record, how to request
+      - can parents request school forms
+      - what’s the procedure for requesting certificates
+      - I want to request my documents online
+      - do you have the document request link
+      - where is the online request form
+      - how to request school forms using Google form
+      - I need Good Moral for requirements, how to request
+      - can I request multiple documents at once
+      - how do I ask registrar for documents
+      - what are the steps before document release
+      - who approves document requests
+      - is school head approval needed for forms
+      - I want to request certificate, what’s the process
+      - I need a copy of school form, steps please
+      - request forms process in school please
+      - how do I request a school document quickly
+      - requesting school forms procedure
+      - how to request certificates and forms
+
+  - intent: ask_release_after_request
+    examples: |
+      - when will my requested documents be released
+      - when can I claim my requested document
+      - how many days before document release
+      - what’s the release timeline for requested records
+      - when do I get my requested forms
+      - when will registrar release my documents
+      - how long until I can pick up my documents
+      - what is the standard release time for requested documents
+      - how soon can I receive the requested certificate
+      - what is the waiting time for release
+      - is there a processing period for release
+      - when will my documents be ready for claiming
+      - can I know when the requested records are available
+      - release schedule for requested documents?
+      - do documents get released within a few days
+      - how many working days for release
+      - when will the registrar finish preparing the documents
+      - after requesting, when can I pick it up
+      - after I submit a request, when can I claim it
+      - do you have a standard time for releasing documents
+      - when will my request be acknowledged and released
+      - how many workdays before release
+      - is it 3 to 7 days for release
+      - do you release documents within a week
+      - what’s the usual release time after request
+      - timeline for document release please
+      - when can I get the Good Moral after requesting
+      - when is Certificate of Enrollment released
+      - when will SF9 be released after request
+      - when will SF10 be released after request
+      - when will F137 be released after request
+      - how do I know if documents are ready for release
+      - can I follow up about release time
+      - can I check status of my release
+      - what’s the processing window for releasing documents
+      - after logging the request, when do they release it
+      - when does the registrar release approved documents
+      - when can I expect the release
+      - how long should I wait before claiming documents
+      - when is the soonest I can claim my documents
+      - can you tell me the release lead time
+      - do you have a release timeframe
+
+  - intent: ask_transferee_late_enrollee
+    examples: |
+      - what is the process for transferees
+      - how do transferees enroll
+      - I’m a transferee, what should I do
+      - process for late enrollees please
+      - can I enroll late, what’s the procedure
+      - what credentials do transferees submit
+      - where do transferees submit transfer credentials
+      - does registrar verify transferee records
+      - do transferees need guidance interview
+      - is there an assessment for transferees
+      - who approves transferee enrollment
+      - is enrollment subject to slot availability
+      - how to enroll if I’m transferring schools
+      - transferee enrollment process steps
+      - what is required for late enrollment
+      - how to process late enrollee application
+      - guidance office interview for transferees?
+      - does school head approve late enrollees
+      - can I still enroll even if late
+      - transferee procedure from start to end
+      - where do I begin if I’m a transferee
+      - I’m moving schools, how do I enroll here
+      - can you tell me the steps for transferee enrollment
+      - what office handles transferee evaluation
+      - what happens after registrar checks transfer papers
+      - do I need complete transfer credentials
+      - can late enrollees still get accepted
+      - how do I know if there are slots available
+      - do late enrollees need approval
+      - transferee assessment process please
+      - requirements for transferees and late enrollees
+      - how does guidance evaluate transferees
+      - what does the registrar check for transferees
+      - late enrollee steps and offices involved
+      - who decides final approval for transferees
+      - can you explain the transfer enrollment flow
+      - where can I submit transfer documents
+      - what’s the process if I enroll beyond deadline
+      - can I enroll after classes start
+      - transferee enrollment approval process
+      - late enrollment approval process
+
+  - intent: ask_change_strand
+    examples: |
+      - how do I request a change of strand
+      - I want to change my strand, what’s the process
+      - can I shift strand
+      - what office handles strand change
+      - how to request strand transfer
+      - I want to move to another strand
+      - strand change request steps please
+      - do I need a written request to change strand
+      - where do I submit strand change letter
+      - does guidance evaluate strand change
+      - what does guidance do for strand change
+      - does registrar review records for strand change
+      - is school head approval needed for strand change
+      - how long does strand change approval take
+      - can I change strand anytime
+      - is there an assessment for strand shifting
+      - how to change strand officially
+      - who approves the final strand change
+      - what is required to change strand
+      - do I need counseling for strand change
+      - can guidance counselor interview me for strand change
+      - how does the school decide strand change
+      - what records are checked for strand change
+      - can you outline the strand change process
+      - where will strand change be recorded
+      - does strand change reflect in Form 201
+      - I want to shift from STEM to HUMSS, what do I do
+      - shifting strands procedure
+      - request for strand modification
+      - can I change my track or strand
+      - what office should I go first for strand change
+      - do I need endorsement for strand change
+      - registrar involvement in strand change?
+      - guidance office involvement in strand change?
+      - school head approval for shifting strand?
+      - how to request strand adjustment
+      - can I request strand reconsideration
+      - I want a different strand placement
+      - strand reassignment request
+      - what are the steps to change my strand
+      - who processes strand change requests
+
+  - intent: ask_failing_marks
+    examples: |
+      - what if I have failing marks
+      - I’m failing, what happens next
+      - what is the process for failing grades
+      - what will the school do if I fail
+      - do teachers notify students with failing grades
+      - who do I talk to if I’m at risk of failing
+      - does the subject teacher handle failing cases
+      - do I get counseling if I have low grades
+      - will there be intervention if I’m failing
+      - are remedial classes available for failing students
+      - what support programs exist for failing marks
+      - what steps happen after a failing performance
+      - how does the school address at-risk students
+      - will guidance office help with failing marks
+      - does the adviser get involved if I’m failing
+      - what is remedial process for low grades
+      - can I improve after intervention
+      - do they reassess my performance after remedial
+      - how are final grades recorded if I fail
+      - what’s the procedure if I’m at risk
+      - who informs me about failing marks
+      - I got low scores, what do I do
+      - if I fail a subject, what happens
+      - is there academic counseling for failing students
+      - how does intervention work for failing marks
+      - do I have to attend remedial classes
+      - does the school provide academic support
+      - what is the school’s process for failing grades
+      - will my teacher contact my parent if I’m failing
+      - what happens after counseling for failing marks
+      - will I be reassessed after remedial activities
+      - does DepEd have guidelines for failing marks
+      - what happens when teacher marks me at-risk
+      - I’m struggling academically, what’s the process
+      - I might fail this quarter, what should I do
+      - how do they handle repeated failing marks
+      - who records the final grade after intervention
+      - can I still pass after remedial
+      - what if my grade is below passing
+      - failing marks process steps please
+      - what’s the next step when I fail a subject
+
+  - intent: ask_graduation_requirements
+    examples: |
+      - what are the graduation requirements
+      - requirements to graduate in SHS
+      - what do I need to graduate
+      - graduation eligibility requirements
+      - what subjects must I complete to graduate
+      - do I need clearances for graduation
+      - what documents are needed for graduation
+      - who verifies graduation records
+      - does registrar check graduation requirements
+      - does the school head confirm graduation eligibility
+      - how do I know if I’m qualified to graduate
+      - what is the process for graduation confirmation
+      - graduation checklist please
+      - what steps are required before graduation
+      - do I need to complete all SHS subjects
+      - how does the school confirm graduation status
+      - who finalizes the list of graduates
+      - what offices are involved in graduation processing
+      - what is the registrar’s role in graduation
+      - do subject teachers have a role in graduation
+      - do I need academic clearance before graduation
+      - where do I secure graduation documents
+      - how to process graduation requirements
+      - what happens after my records are verified
+      - is there approval required for graduation
+      - can you explain graduation requirements step by step
+      - what must be completed to graduate
+      - graduation requirements in simple list
+      - does the school head sign graduation eligibility
+      - how to check if I completed required units
+      - what forms do I need for graduation
+      - do I need to settle documents for graduation
+      - graduation process offices involved
+      - what should I prepare before graduation
+      - what is needed for graduation confirmation
+      - how do advisers help in graduation process
+      - where can I ask about graduation requirements
+      - I want to graduate on time, what requirements
+      - graduation requirements process please
+      - how do I complete graduation requirements
+
+  - intent: ask_drop_add_subjects
+    examples: |
+      - what is the process of dropping and adding subjects
+      - how do I drop a subject
+      - how do I add a subject
+      - add/drop process please
+      - can I change my subjects
+      - how to adjust my subject load
+      - is there a deadline for adding subjects
+      - is there a deadline for dropping subjects
+      - do I need to submit a written request for add/drop
+      - who approves dropping a subject
+      - who approves adding a subject
+      - does the adviser endorse add/drop
+      - does registrar update records after add/drop
+      - is school head approval required for add/drop
+      - what’s the correct procedure to drop a subject
+      - what’s the correct procedure to add a subject
+      - can you list steps for add and drop
+      - where do I submit the add/drop request
+      - is there an allowed adjustment period
+      - can I still change subjects after the adjustment period
+      - how does registrar review subject load
+      - what happens after approval for add/drop
+      - how are official records updated for add/drop
+      - I want to remove a subject, what do I do
+      - I want to include another subject, what do I do
+      - how do I request subject change
+      - who should I talk to about dropping a subject
+      - who should I talk to about adding a subject
+      - is there a form for add/drop
+      - do I need endorsement for add/drop
+      - what office handles subject adjustments
+      - can I add a subject mid-semester
+      - can I drop a subject mid-semester
+      - add/drop steps with offices involved
+      - subject adjustment process in school
+      - how to process add/drop officially
+      - will my schedule change after add/drop
+      - does the registrar need to approve add/drop
+      - who finalizes add/drop changes
+      - add/drop subject policy steps
+      - dropping and adding procedure explanation
+
+  - intent: ask_drop_student_process
+    examples: |
+      - what is the process of dropping students
+      - how does the school drop a student
+      - what happens if a student is dropped
+      - when can a student be dropped
+      - can a student be dropped due to absences
+      - can a student be dropped due to low grades
+      - can a student be dropped due to discipline issues
+      - who decides to drop a student
+      - does guidance office conduct counseling first
+      - is there a parent conference before dropping
+      - what is the due process before dropping
+      - do they document everything before dropping
+      - what is the school head’s role in dropping
+      - does registrar record the dropping officially
+      - what steps happen prior to dropping
+      - how does the adviser get involved in dropping
+      - can you explain the dropping procedure
+      - what office handles dropping cases
+      - what triggers the dropping process
+      - is there counseling before dropping a student
+      - does the school require documentation for dropping
+      - what happens after the school head decides
+      - where is the dropping recorded
+      - dropping process for excessive absences
+      - dropping process for academic deficiency
+      - dropping process for disciplinary concern
+      - how to avoid being dropped
+      - what should I do if I’m at risk of dropping
+      - does the school notify parents before dropping
+      - what is the step after counseling
+      - who attends the parent/guardian conference
+      - can I appeal a dropping decision
+      - does the registrar update records when dropped
+      - how long does dropping process take
+      - what’s the sequence of dropping steps
+      - what documents are needed for dropping process
+      - does due process mean hearings or meetings
+      - can you list offices involved in dropping students
+      - dropping policy process please
+      - explain student dropping process clearly
+      - what’s required before official dropping
+      - does the adviser recommend dropping
+
+  - intent: ask_absence_policy
+    examples: |
+      - what is the excuse letter policy
+      - what is the absence policy
+      - do I need an excuse letter for absences
+      - how do I write an excuse letter
+      - where do I submit the excuse letter
+      - who validates my excuse letter
+      - should the excuse letter be signed by parent
+      - do I need supporting documents for absence
+      - what documents can support an excuse letter
+      - when should I submit the excuse letter
+      - do I submit excuse letter upon returning to school
+      - what happens after adviser validates the excuse
+      - how is attendance updated after excused absence
+      - absence rules in this school?
+      - what counts as an excused absence
+      - do medical absences need proof
+      - do family emergencies need proof for absence
+      - who handles excuses, adviser or registrar
+      - is it required that parent signs the letter
+      - where do I pass my parent-signed letter
+      - what is the process for excusing an absence
+      - excuse letter steps please
+      - can you explain absence procedure
+      - what office is involved in absence validation
+      - how do I get my absence marked excused
+      - what if I forget to bring excuse letter
+      - can I submit excuse letter late
+      - how many days after return should I submit letter
+      - does the adviser accept the excuse letter
+      - what does the adviser check in excuse letter
+      - do I need to attach documents to excuse letter
+      - absence policy for students please
+      - I was absent yesterday, what do I submit
+      - I was absent for 3 days, what do I do
+      - can you confirm the excuse letter process
+      - what should be included in the excuse letter
+      - how does attendance record get corrected
+      - absence protocol, where do I start
+      - excused absence process explanation
+      - I need the absence policy steps
+      - how to process my absence properly
+
+  - intent: ask_facility_request
+    examples: |
+      - how do I request the use of school facilities
+      - how to request the gym for an activity
+      - how to request the auditorium
+      - can we borrow a classroom for an event
+      - what is the process for facility request
+      - who approves facility use requests
+      - do I need a written request for facility use
+      - where do I submit the facility request letter
+      - does my adviser need to endorse the request
+      - does the subject teacher endorse the request
+      - who checks facility availability
+      - what does the property custodian do
+      - does the school head give final approval
+      - what details should be in the request
+      - do I need to state purpose and schedule
+      - how early should I request facilities
+      - can students request facilities directly
+      - can parents request facility use
+      - is there a form for facility request
+      - what’s the step after adviser endorsement
+      - who handles safety checks for facilities
+      - how do they confirm availability of facility
+      - who should I talk to for facility booking
+      - facility request process steps please
+      - how to reserve a school facility
+      - how to secure approval for facility usage
+      - can you list offices involved for facility request
+      - what happens after school head approves
+      - do we get confirmation after approval
+      - can you explain facility request flow
+      - how do I request equipment with facility
+      - can I request the lab room for project work
+      - can I request the covered court schedule
+      - is there a policy for facility usage
+      - how do I book the stage area
+      - what’s required for facility request approval
+      - where do I send the written request
+      - do I need adviser signature for facility request
+      - who finalizes facility request
+      - facility request guide please
+      - process for using school facilities
+
+  - intent: ask_get_enrollment_form
+    examples: |
+      - where can I get the enrollment form
+      - where do I get the enrollment form
+      - who provides the enrollment form
+      - which office issues the enrollment form
+      - where is the enrollment form released
+      - can I get enrollment form from registrar
+      - do I ask registrar for enrollment form
+      - where do applicants request the enrollment form
+      - who explains the enrollment form
+      - where do I inquire about enrollment form
+      - I need the enrollment form, where do I go
+      - can you tell me where to get the enrollment form
+      - where can my child get the enrollment form
+      - does the registrar have the enrollment form
+      - is the enrollment form available at school office
+      - where do I pick up enrollment form
+      - do I need to visit registrar for enrollment form
+      - I want to get the enrollment form today, where
+      - where is the enrollment form issued and explained
+      - who should I approach to get enrollment form
+      - enrollment form location please
+      - enrollment form source please
+      - where can I secure the enrollment form
+      - is enrollment form given at registrar’s office
+      - how do I obtain the enrollment form
+      - can I request enrollment form as parent
+      - do I need to queue at registrar for enrollment form
+      - where is the office for enrollment forms
+      - where do I get the official enrollment form
+      - which department releases enrollment forms
+      - I’m a new applicant, where do I get the form
+      - enrollment form claiming process
+      - where can I ask about the enrollment form
+      - enrollment form inquiry, where to go
+      - who gives out the enrollment forms
+      - where to get printed enrollment form
+      - is the enrollment form available in registrar
+      - I need enrollment sheet, where to request
+      - where do they hand out enrollment forms
+      - where can transferees get enrollment form
+
+  - intent: ask_enrollment_requirements
+    examples: |
+      - what are the requirements for enrollment
+      - enrollment requirements please
+      - what documents do I need to enroll
+      - requirements to enroll in this school
+      - what should I prepare for enrollment
+      - what is needed for enrollment submission
+      - do I need birth certificate for enrollment
+      - do I need SF9 for enrollment
+      - do I need certificate of completion for enrollment
+      - can you list the enrollment requirements
+      - where do I submit enrollment requirements
+      - who checks the enrollment requirements
+      - do I need complete requirements before enrolling
+      - what papers are required for enrollment
+      - enrollment docs checklist please
+      - does registrar evaluate requirements
+      - is compliance confirmed before enrollment
+      - what forms are required for enrollment
+      - what are the standard enrollment documents
+      - do transferees have different requirements
+      - what requirements for new students
+      - what requirements for old students
+      - what requirements for returning students
+      - can you specify requirements for enrollment
+      - I want to enroll, what should I bring
+      - what documents do I submit to registrar
+      - are there required school forms for enrollment
+      - what if I lack one requirement, can I enroll
+      - what are the minimum documents needed to enroll
+      - what to prepare for enrollment verification
+      - requirements for SHS enrollment
+      - what do I need for senior high enrollment
+      - requirement list for enrollment process
+      - can you give enrollment requirements in bullet style
+      - do I need JHS documents to enroll
+      - do I need valid ID to enroll
+      - what’s required before enrollment becomes official
+      - requirement submission steps
+      - what documents are checked during enrollment
+      - what’s the full set of enrollment requirements
+      - enrollment requirements for applicants
+
+  - intent: ask_authorized_claim
+    examples: |
+      - can someone claim my documents on my behalf
+      - can my parent claim my documents for me
+      - can a representative claim my school records
+      - what is the process for authorized claiming
+      - can another person pick up my documents
+      - can my sibling claim my requested documents
+      - what do I need if someone else will claim my documents
+      - do I need an authorization letter for claiming
+      - what should my representative bring to claim documents
+      - do we need valid IDs for authorized claim
+      - what IDs are required for representative claiming
+      - does registrar verify authorization letters
+      - can my guardian claim my certificate
+      - can my friend claim my document if I’m busy
+      - how do I authorize someone to claim my records
+      - what is the procedure for proxy claiming
+      - claiming process for authorized representative
+      - is an authorization letter mandatory
+      - do both parties need to provide IDs
+      - can I send someone else to get my SF10
+      - can I send someone else to get my F137
+      - can I send someone else to get Good Moral
+      - can I send someone else to get SF9
+      - can I send someone else to get my report card
+      - how to claim documents through representative
+      - where do we submit the authorization letter
+      - does the registrar check identity before releasing
+      - can you list steps for claiming on behalf
+      - is there a special form for authorized claiming
+      - can my parent claim my certificate of enrollment
+      - what documents must the representative submit
+      - do I need my ID photocopy for authorized claim
+      - what does registrar verify for representative claim
+      - can a representative pick up records without me
+      - what’s needed for someone else to claim my docs
+      - what is allowed for document claiming
+      - can a guardian claim my documents
+      - can an aunt/uncle claim my records
+      - does authorization need signature
+      - can authorized person claim the documents directly
+      - how do I write an authorization letter for claiming
+      - can someone pick up my documents if I’m absent
+
+  - intent: ask_certificate_fee
+    examples: |
+      - is there a fee for requesting certificates
+      - do I need to pay for school forms
+      - are certificates free
+      - is Good Moral free
+      - do you charge for Certificate of Enrollment
+      - do I need payment for SF9 request
+      - do I need payment for report card request
+      - do I need payment for SF10 request
+      - do I need payment for F137 request
+      - is there any processing fee for documents
+      - do I pay anything when requesting records
+      - are school documents issued without payment
+      - do public schools collect fees for certificates
+      - are there charges for requesting school records
+      - is there a cashier payment for documents
+      - do I need to bring money for requesting forms
+      - are school forms free of charge
+      - does the registrar collect money for certificates
+      - is there a fee for document issuance
+      - do I need to pay for certified true copy
+      - are certificates processed even without payment
+      - can you confirm if requesting documents is free
+      - does the school charge for records
+      - do I pay for clearance documents
+      - is there a fee for school certifications
+      - do I pay for certificate printing
+      - do I pay for document processing
+      - does DepEd allow collections for certificates
+      - is there compulsory collection for forms
+      - are public school documents no-fee
+      - is payment required for requesting school forms
+      - do I need official receipt for document request
+      - can I request certificates without paying
+      - what does “no payment” mean for documents
+      - do students pay for requesting forms
+      - do parents pay for requesting forms
+      - is there a fee for document request submission
+      - is there a charge for certificate release
+      - is there a cost for school form issuance
+      - do I have to pay at cashier for certificates
+      - can you confirm there is no fee
+      - are certificates processed for free
+      - no fees for documents, correct?
+
+  - intent: ask_process_documents_time
+    examples: |
+      - how long does it take to process documents
+      - what is the processing time for requested forms
+      - how many days is document processing
+      - how long is processing for school records
+      - document processing time please
+      - processing timeline for Good Moral
+      - processing timeline for Certificate of Enrollment
+      - processing timeline for SF9
+      - processing timeline for report card
+      - processing timeline for SF10
+      - processing timeline for F137
+      - how long does registrar process documents
+      - what’s the standard processing period
+      - how many working days for processing documents
+      - do documents take 3 to 7 working days to process
+      - how soon are documents processed
+      - how many days before documents are ready
+      - what’s the waiting time for processing
+      - how long until my request is completed
+      - how long before registrar finishes processing
+      - is the usual processing 3 to 7 days
+      - can you confirm document processing duration
+      - processing time for certificates please
+      - how long do I need to wait for document processing
+      - does processing include record verification
+      - how many days for verification and processing
+      - what’s the turnaround time of document processing
+      - average processing time for school forms
+      - expected processing days for document request
+      - how long to process my request after logging
+      - when does processing start after I submit a request
+      - do weekends count in processing days
+      - processing time in working days, right
+      - can I claim within a week if processed fast
+      - how long does the registrar take to prepare documents
+      - processing duration for record requests
+      - what is the official processing time window
+      - how long should I wait before following up
+      - can I follow up after 3 working days
+      - can it take up to 7 working days
+      - how long is the processing per citizen charter
+      - processing time explanation please
+      - typical document processing time
+      - is processing time the same as release time
+      - what’s the processing lead time
+
+  - intent: ask_class_standing
+    examples: |
+      - how is class standing computed
+      - how do teachers compute class standing
+      - how are grades computed for class standing
+      - class standing computation process
+      - what is the basis of class standing
+      - what components are included in class standing
+      - does class standing include written works
+      - does class standing include performance tasks
+      - does class standing include quarterly assessment
+      - how is the final grade computed
+      - how does DepEd compute grades
+      - can you explain how grades are calculated
+      - what is the grading breakdown
+      - how do rubrics affect performance tasks
+      - how is performance task scored
+      - how is written work scored
+      - how is quarterly exam factored
+      - how is class standing determined each quarter
+      - how do teachers total grades
+      - what is the formula for class standing
+      - class standing calculation steps
+      - where can I ask about grade computation
+      - is class standing based on outputs
+      - how do outputs affect class standing
+      - are quizzes part of written works
+      - is project part of performance tasks
+      - do exams affect class standing
+      - what is included in the quarter grade
+      - how is the final average computed
+      - how do teachers compute my grade
+      - what do they use to compute class standing
+      - can you explain the grading components
+      - class standing is based on what
+      - how does DepEd assessment guideline compute grades
+      - do rubrics matter in class standing
+      - how are scores converted to grades
+      - what is the computation for grades in SHS
+      - can you detail written works and performance tasks
+      - what counts as written work
+      - what counts as performance task
+      - class standing computation guide please
+      - explain class standing in simple terms
+
+  - intent: ask_absence_limit
+    examples: |
+      - how many absences are allowed before failing
+      - what is the maximum absences allowed
+      - absence limit before dropping
+      - can I fail because of too many absences
+      - how many absences before I get dropped
+      - what happens if I exceed the absence limit
+      - what is the rule about 20 percent absences
+      - is it true that exceeding 20% can lead to dropping
+      - do they count total school days for absence limit
+      - how do they compute allowable absences
+      - who monitors absences
+      - does adviser notify students near absence limit
+      - what happens when I’m near the absence threshold
+      - do I get counseling if I’m absent too much
+      - does guidance intervene for excessive absences
+      - can students be dropped for frequent absences
+      - can students fail due to attendance
+      - attendance limit policy please
+      - what is the allowed absence rate
+      - how many days can I be absent in a quarter
+      - how many total absences are too many
+      - what’s the consequence of excessive absences
+      - will parents be notified about absences
+      - is there due process for dropping due to absences
+      - what steps happen before dropping for absences
+      - do you warn students before dropping
+      - how does the school handle excessive absences
+      - can I be marked failed due to attendance
+      - how is the 20 percent rule applied
+      - how do they decide if absences exceed 20%
+      - does intervention happen before failing due to absences
+      - who provides intervention for attendance issues
+      - does the adviser track attendance daily
+      - will I be called for counseling if absent often
+      - what should I do if I already have many absences
+      - can I still recover if I have many absences
+      - attendance rule for failing or dropping
+      - how many absences until I’m at risk
+      - what is the absence limit guideline
+      - explain the absence limit policy
+      - allowed absences before consequences
+      - absences policy threshold
+
+  - intent: ask_contact_information
+    examples: |
+      - contact information
+      - school contact information
+      - contact details
+      - school contact details
+      - how can I contact the school
+      - what is the school contact number
+      - what is the school phone number
+      - what is the school email
+      - school email address
+      - school phone
+      - registrar contact information
+      - can I have the contact information
+      - how do I reach the school
+      - how do I contact the registrar
+      - official contact information
+      - school hotline
+      - where can I contact the school
+      - school office contact
+      - contact number of the school
+      - contact info
+      - how can I contact NU
+      - national university contact information
+      - contact number of the registrar
+      - registrar phone number
+      - registrar email
+      - admissions contact information
+      - school office number
+      - how do I call the school
+      - give me the contact details
+      - I need the school contact number
+
+  - intent: ask_about_school
+    examples: |
+      - about the school
+      - tell me about the school
+      - school information
+      - information about the school
+      - school details
+      - can you tell me about your school
+      - what should I know about the school
+
+  - intent: ask_school_address
+    examples: |
+      - what is the address of the school
+      - what is our school address
+      - school address
+      - where is the school located
+      - what is the location of the school
+      - can you give me the school address
+      - where can I find the school
+      - address of the school please
+      - where is your school
+      - school location
+      - what is the school location
+      - where are you located
+      - where is the campus located
+      - location of the school
+      - address please
+      - school address please
+      - can you tell me the address
+      - where is the school
+      - what is your address
+      - location or address
+      - address of the school
+
+  - intent: ask_who_can_apply
+    examples: |
+      - who can apply
+      - who are allowed to apply
+      - who may apply for admission
+      - who can enroll
+      - who can apply for sy 2025 2026
+      - are incoming grade 11 students allowed to apply
+      - can grade 12 transferees apply
+      - can foreign students apply
+      - can filipino students apply
+      - who is eligible to apply
+
+  - intent: ask_academic_strands
+    examples: |
+      - what academic strands are offered
+      - what strands do you offer
+      - available strands
+      - do you offer stem
+      - do you offer humss
+      - what strands are available
+      - academic strands offered
+      - what programs are available
+      - what strand can I take
+      - do you have stem and humss
+
+  - intent: ask_switch_strands_midsemester
+    examples: |
+      - can I switch strands in between semesters
+      - can I change strands between semesters
+      - can I shift strands midyear
+      - is strand switching allowed
+      - can I transfer to another strand
+      - can I move from stem to humss
+      - can I switch strand after enrolling
+      - can I change my strand later
+      - strand switching policy
+      - can I shift strands
+
+  - intent: ask_transfer_midsemester
+    examples: |
+      - can I transfer into the school mid semester
+      - can I transfer out of the school mid semester
+      - can I transfer mid semester
+      - is transfer allowed during the semester
+      - can I move schools in the middle of the semester
+      - can I transfer in
+      - can I transfer out
+      - transfer mid semester policy
+      - can transferees enter mid semester
+      - is mid semester transfer possible
+
+  - intent: ask_class_size
+    examples: |
+      - what is the class size
+      - how many students are in a class
+      - how many students per section
+      - class size
+      - section size
+      - how big is each class
+      - how many students are there in grade 11
+      - how many students are there in grade 12
+      - how many learners per section
+      - students per class
+
+  - intent: ask_learning_modes
+    examples: |
+      - what learning modes do you offer
+      - what are the learning modes
+      - do you offer online classes
+      - do you offer offline learning
+      - is remote learning available
+      - can students study online
+      - can students study offline
+      - flexible learning modes
+      - what mode of learning is available
+      - do you have remote online and offline learning
+
+  - intent: ask_uniform_cost
+    examples: |
+      - how much do uniforms cost
+      - what is the uniform price
+      - how much is the uniform
+      - uniform cost
+      - uniform price
+      - how much are school uniforms
+      - where can I ask about uniform price
+      - does the uniform price depend on size
+      - school uniform cost
+      - how much for the uniform
+      - how much is the uniform
+      - what is the uniform price
+      - magkano ang uniform
+      - magkano po uniform
+      - where can I buy the uniform
+      - who sells the uniform
+      - is there an authorized supplier for uniform
+      - where do we purchase the school uniform
+      - how do I know the uniform cost
+      - when will the school announce uniform price
+      - what is the approved uniform design and price
+      - who do I ask about uniform price
+      - can I buy uniform outside the school
+      - where is the official uniform supplier
+      - uniform cost for this school please
+      - is uniform mandatory
+      - can students attend without uniform
+      - will I be excluded if I don’t have uniform
+      - uniform buying process please
+      - how to purchase the uniform properly
+      - can you tell me the steps to get uniform
+      - who handles uniform inquiries
+      - what office can confirm uniform price
+      - do you have a list of uniform sellers
+      - is uniform required for enrollment
+      - uniform details and pricing please
+      - where can I inquire about uniforms
+      - can parents buy uniforms directly
+      - uniform supplier contact?
+      - where do I order uniform
+      - how do I get the uniform set
+      - is the uniform design fixed
+      - who approves the uniform price
+      - when are uniform prices updated
+      - do you announce uniform at start of school year
+      - is uniform purchase directly from supplier
+      - where to get uniform measurement
+      - can I ask admin about uniform price
+      - uniform cost announcement where
+      - how much is the complete uniform set
+      - uniform price for new students?
+
+  - intent: ask_learning_modules
+    examples: |
+      - are learning modules available
+      - are books available
+      - do you have learning modules
+      - are modules available in school
+      - can I access books
+      - where can I access books
+      - are books available at school
+      - learning modules availability
+      - do you provide modules
+      - where can I get learning materials
+
+  - intent: ask_scholarships
+    examples: |
+      - do you provide scholarships
+      - are scholarships available
+      - do you offer scholarships
+      - scholarship availability
+      - is there a scholarship program
+      - can I apply for a scholarship
+      - are there scholarships in your school
+      - scholarship info
+      - do students get scholarships
+      - scholarship offered
+
+  - intent: ask_eligibility_requirements
+    examples: |
+      - what are the eligibility requirements
+      - what are the requirements for entry
+      - eligibility requirements for your programs
+      - what are the requirements for stem
+      - what are the requirements for humss
+      - does humss have eligibility requirements
+      - does stem require a grade average
+      - what gwa is required for stem
+      - program entry requirements
+      - requirements for entry to the strands
+
+  - intent: inform
+    examples: |
+      - [good moral](document_type)
+      - [good moral certificate](document_type)
+      - [gm](document_type)
+      - [goodmoral](document_type)
+      - I need [good moral](document_type)
+      - request [good moral](document_type)
+      - I want [good moral](document_type)
+      - can I get [good moral](document_type)
+
+      - [certificate of enrollment](document_type)
+      - [cert of enrollment](document_type)
+      - [coe](document_type)
+      - [enrollment certificate](document_type)
+      - I need [certificate of enrollment](document_type)
+      - request [certificate of enrollment](document_type)
+      - I want [certificate of enrollment](document_type)
+      - get me [certificate of enrollment](document_type)
+
+      - [sf9](document_type)
+      - [sf 9](document_type)
+      - [sf-9](document_type)
+      - [form 9](document_type)
+      - [school form 9](document_type)
+      - I need [sf9](document_type)
+      - request [sf9](document_type)
+      - I want [sf9](document_type)
+
+      - [report card](document_type)
+      - [reportcard](document_type)
+      - [grade card](document_type)
+      - I need [report card](document_type)
+      - request [report card](document_type)
+      - I want [report card](document_type)
+      - can I get [report card](document_type)
+
+      - [sf10](document_type)
+      - [sf 10](document_type)
+      - [sf-10](document_type)
+      - [form 10](document_type)
+      - [student permanent record](document_type)
+      - I need [sf10](document_type)
+      - request [sf10](document_type)
+      - I want [sf10](document_type)
+
+      - [f137](document_type)
+      - [f 137](document_type)
+      - [f-137](document_type)
+      - [form 137](document_type)
+      - [permanent record f137](document_type)
+      - I need [f137](document_type)
+      - request [f137](document_type)
+      - I want [f137](document_type)
+
+  - synonym: good moral
+    examples: |
+      - good moral certificate
+      - gm
+      - goodmoral
+      - certificate of good moral
+
+  - synonym: certificate of enrollment
+    examples: |
+      - cert of enrollment
+      - coe
+      - enrollment certificate
+      - certificate enrollment
+
+  - synonym: sf9
+    examples: |
+      - sf 9
+      - sf-9
+      - form 9
+      - school form 9
+
+  - synonym: report card
+    examples: |
+      - reportcard
+      - grade card
+      - sf9 report card
+
+  - synonym: sf10
+    examples: |
+      - sf 10
+      - sf-10
+      - student permanent record
+      - form 10
+
+  - synonym: f137
+    examples: |
+      - f 137
+      - f-137
+      - form 137
+      - permanent record f137
+
+  - regex: document_type
+    examples: |
+      - (?i)\bgood\s*moral\b
+      - (?i)\bgood\s*moral\s*certificate\b
+      - (?i)\bcertificate\s+of\s+enrollment\b
+      - (?i)\bcert\s+of\s+enrollment\b
+      - (?i)\bcoe\b
+      - (?i)\bsf[\s\-]*9\b
+      - (?i)\bform[\s\-]*9\b
+      - (?i)\breport\s*card\b
+      - (?i)\bgrade\s*card\b
+      - (?i)\bsf[\s\-]*10\b
+      - (?i)\bform[\s\-]*10\b
+      - (?i)\bf[\s\-]*137\b
+      - (?i)\bform[\s\-]*137\b
