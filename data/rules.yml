@@ -265,3 +265,14 @@ rules:
       - action: action_set_topic
       - action: utter_eligibility_requirements
       - action: action_suggest_followups
+
+  - rule: Fallback to thesaurus
+    steps:
+      - intent: nlu_fallback
+      - action: action_thesaurus_backup
+
+  - rule: Respond to school background
+    steps:
+      - intent: ask_school_background
+      - action: utter_school_background
+

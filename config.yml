@@ -1,33 +1,47 @@
 recipe: default.v1
+
+# Even if using Taglish, keeping 'en' is generally fine for the base configuration
+# unless you are using a strictly Filipino pre-trained Spacy model.
 language: en
 
 pipeline:
-  - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: RegexEntityExtractor
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: char_wb
-    min_ngram: 1
-    max_ngram: 4
-  - name: DIETClassifier
-    epochs: 100
-  - name: EntitySynonymMapper
-  - name: ResponseSelector
-    epochs: 100
-  - name: FallbackClassifier
-    threshold: 0.6
-    ambiguity_threshold: 0.1
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+
+  # Analyzes whole words
+- name: CountVectorsFeaturizer
+
+  # Analyzes parts of words (crucial for Filipino prefixes/suffixes like "nag-", "-in")
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+
+  # The main machine learning model for Intent Classification
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+
+- name: EntitySynonymMapper
+
+- name: ResponseSelector
+  epochs: 100
+  constrain_similarities: true
+
+  # Triggers a fallback action if the bot truly doesn't understand the user
+- name: FallbackClassifier
+  threshold: 0.3
+  ambiguity_threshold: 0.1
 
 policies:
+- name: MemoizationPolicy
 - name: RulePolicy
-  core_fallback_threshold: 0.30
-  core_fallback_action_name: "action_context_fallback"
-  enable_fallback_prediction: true
-
+- name: UnexpecTEDIntentPolicy
+  max_history: 5
+  epochs: 100
 - name: TEDPolicy
   max_history: 5
-  epochs: 120
+  epochs: 100
   constrain_similarities: true
-assistant_id: 20260224-181643-piercing-judy
+assistant_id: 20260527-153620-flat-tensor

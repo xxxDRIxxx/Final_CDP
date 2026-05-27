@@ -42,6 +42,7 @@ intents:
   - ask_scholarships
   - ask_eligibility_requirements
   - ask_about_school
+  - ask_school_background
 
 entities:
   - document_type
@@ -555,12 +556,20 @@ responses:
 
         The **STEM** strand requires at least a **general weighted average of 85 in all subjects**.
 
+  utter_school_background:
+    - text: |
+        **School Background**
+        Senior High School within Bacoor Elementary School was established in 2016. It is one of the five public senior high schools in the Division of Bacoor City. It started catering to students under the Science, Technology, Engineering, and Mathematics (STEM) Strand, and later added the Humanities and Social Sciences (HUMSS) strand in 2020.
+
+        SHS within Bacoor ES was first housed in SHS Dulong Bayan, alongside SHS Dulong Bayan and SHS within Sineguelasan. In June 2021, the school was transferred and housed within Bacoor ES. It was originally named SHS Alima, as Bacoor ES is situated in Barangay Alima, but was later renamed to SHS within Bacoor Elementary School. The school's main gate is situated in Barangay Campo Santo, making it a proud constituent of the local community.
+
 actions:
   - action_set_topic
   - action_handle_pronoun
   - action_context_fallback
   - action_route_document_type
   - action_suggest_followups
+  - action_thesaurus_backup
 
 session_config:
   session_expiration_time: 60

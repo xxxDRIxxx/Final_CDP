@@ -1795,3 +1795,42 @@ class ActionDynamicResponse(Action):
         dispatcher.utter_message(text=text_to_send)
         log_unknown_query(user_text, intent_name=intent)
         return []
+
+    import requests
+    from rasa_sdk import Action, Tracker
+    from rasa_sdk.executor import CollectingDispatcher
+
+    class ActionThesaurusBackup(Action):
+        def name(self) -> str:
+            return "action_thesaurus_backup"
+
+        def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict):
+            # 1. Get the word the bot failed to understand
+            user_word = tracker.get_slot("user_term")
+
+            if not user_word:
+                dispatcher.utter_message(text="I'm sorry, I didn't quite catch that. Could you rephrase?")
+                return []
+
+            # 2. Query the Datamuse API (ml = "means like")
+            api_url = f"https://api.datamuse.com/words?ml={user_word}&max=3"
+
+            try:
+                response = requests.get(api_url, timeout=2)
+                results = response.json()
+
+                if results:
+                    # 3. Take the top result as the synonym
+                    synonym = results[0]['word']
+                    dispatcher.utter_message(
+                        text=f"I wasn't sure about '{user_word}', but did you mean something related to '{synonym}'?")
+                else:
+                    dispatcher.utter_message(
+                        text="I'm not sure what that means. Could you try asking in a different way?")
+
+            except Exception as e:
+                # Fallback if the API is down
+                dispatcher.utter_message(
+                    text="I'm having trouble connecting to my thesaurus right now, but please try another keyword!")
+
+            return []

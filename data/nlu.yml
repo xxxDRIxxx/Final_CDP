@@ -925,6 +925,11 @@ nlu:
       - what documents are checked during enrollment
       - what’s the full set of enrollment requirements
       - enrollment requirements for applicants
+      - what are the requirements?
+      - what are the prerequisites?
+      - what is the prerequisite for enrollment?
+      - what are the enrollment prerequisites?
+      - list prerequisites for enrollment
 
   - intent: ask_authorized_claim
     examples: |
@@ -1448,12 +1453,69 @@ nlu:
       - request [f137](document_type)
       - I want [f137](document_type)
 
+  - intent: ask_school_background
+    examples: |
+      - what is the school background
+      - tell me the history of the school
+      - when did the school start
+      - what strands did the school start with
+      - is SHS within BES a public school
+      - tell me about Senior High School within Bacoor Elementary School
+      - what is the history of SHSwBES
+      - how did the school start
+      - can you give me the school background
+      - school history please
+      - background of the school
+      - origin of the school
+      - ano ang history ng school?
+      - paano nagsimula ang shswbes?
+      - ano ang school background niyo?
+      - kwento niyo naman history ng school.
+      - kailan nagsimula ang shs within bes?
+      - anong strands meron nung nagstart kayo?
+      - public school ba ito?
+      - paki-explain ang background ng shswbes.
+      - history ng school please.
+      - school background info.
+      - paano nabuo ang school na 'to? 
+      - ano ang history ng school?
+      - paano nagsimula ang shswbes?
+      - ano ang school background niyo?
+      - kwento niyo naman history ng school.
+      - kailan nagsimula ang shs within bes?
+      - anong strands meron nung nagstart kayo?
+      - public school ba ito?
+      - paki-explain ang background ng shswbes.
+      - history ng school please.
+      - school background info.
+      - paano nabuo ang school na 'to?
+      - tell me about the school history
+      - what is shswbes background
+      - when was shswbes established
+      
+
+  - synonym: background
+    examples: |
+      - history
+      - origin
+      - started
+      - founded
+      - nagsimula
+      - pagkakatatag
+      - background info
+      - story
+      - background
+      - established
+      
+
   - synonym: good moral
     examples: |
       - good moral certificate
       - gm
       - goodmoral
       - certificate of good moral
+      - gmc
+      - cert of good moral
 
   - synonym: certificate of enrollment
     examples: |
@@ -1461,6 +1523,8 @@ nlu:
       - coe
       - enrollment certificate
       - certificate enrollment
+      - cert of enrolment
+      - proof of enrollment
 
   - synonym: sf9
     examples: |
@@ -1474,6 +1538,9 @@ nlu:
       - reportcard
       - grade card
       - sf9 report card
+      - card
+      - grades
+      - reportcard
 
   - synonym: sf10
     examples: |
@@ -1481,6 +1548,9 @@ nlu:
       - sf-10
       - student permanent record
       - form 10
+      - permanent record
+      - transcript
+      - tor
 
   - synonym: f137
     examples: |
@@ -1488,6 +1558,385 @@ nlu:
       - f-137
       - form 137
       - permanent record f137
+      - form-137
+
+  - synonym: hello
+    examples: |
+      - hi
+      - hey
+      - heya
+      - yo
+      - sup
+      - kumusta
+      - greetings
+      - musta
+      - eow
+      - gud am
+      - gud pm
+      - wassup
+      - hi po
+      - hello po
+      - musta po
+
+  - synonym: goodbye
+    examples: |
+      - bye
+      - see you
+      - ciao
+      - exit
+      - stop
+      - bye po
+      - out
+      - brb
+      - gotta go
+      - gtg
+      - sign off
+
+  - synonym: yes
+    examples: |
+      - yeah
+      - yep
+      - yup
+      - y
+      - sure
+      - okay
+      - ok
+      - alright
+      - correct
+      - exactly
+      - indeed
+      - absolutely
+      - definitely
+      - tama
+      - oo
+      - affirmative
+      - agree
+      - sige
+      - cge
+      - ge
+      - opo
+      - oki
+      - okies
+      - tumpak
+      - sigi
+
+  - synonym: no
+    examples: |
+      - nope
+      - nah
+      - n
+      - incorrect
+      - wrong
+      - negative
+      - mali
+      - hindi
+      - wag
+      - pass
+      - disagree
+      - di
+      - d po
+      - ayoko
+      - ekis
+      - hindi po
+      - de
+      - wala
+
+  - synonym: lost
+    examples: |
+      - missing
+      - misplaced
+      - stolen
+      - nawala
+      - gone
+      - naiwan
+      - ninakaw
+      - nawawala
+
+  - synonym: id
+    examples: |
+      - id card
+      - school id
+      - student id
+      - identification card
+      - id lace
+
+  - synonym: enrollment
+    examples: |
+      - enroll
+      - enrol
+      - enrolled
+      - enrollee
+      - applying
+      - admission
+      - enrolment
+      - registration
+      - mag enroll
+      - magpapa-enroll
+      - mag e-enroll
+      - register
+
+  - synonym: documents
+    examples: |
+      - records
+      - certificates
+      - files
+      - papers
+      - forms
+      - certification
+      - credentials
+      - docs
+      - school records
+      - school forms
+      - papeles
+      - dokumento
+
+  - synonym: release
+    examples: |
+      - claim
+      - pick up
+      - pickup
+      - get
+      - makuha
+      - makukuha
+      - kukunin
+      - ibibigay
+      - issuance
+      - lalabas
+      - ilalabas
+      - ipamimigay
+
+  - synonym: transferee
+    examples: |
+      - transferring
+      - transfer
+      - transferred
+      - lilipat
+      - palipat
+      - lumipat
+
+  - synonym: late enrollee
+    examples: |
+      - late enrollment
+      - enroll late
+      - nahuli sa enrollment
+      - late
+      - late mag enroll
+
+  - synonym: change
+    examples: |
+      - shift
+      - switch
+      - move
+      - modification
+      - adjustment
+      - reassignment
+      - palit
+      - lipat
+      - magpapalit
+      - amend
+      - papalitan
+      - lilipat
+
+  - synonym: failing
+    examples: |
+      - fail
+      - low grades
+      - at risk
+      - low scores
+      - bagsak
+      - failed
+      - flunk
+      - pasang awa
+      - remedial
+      - failing marks
+      - di pumasa
+
+  - synonym: drop
+    examples: |
+      - remove
+      - withdraw
+      - tanggal
+      - tanggalin
+      - cancel
+      - ma-drop
+
+  - synonym: add
+    examples: |
+      - include
+      - isama
+      - idagdag
+      - enroll subject
+      - dagdag
+
+  - synonym: absence
+    examples: |
+      - absent
+      - absences
+      - excuse
+      - liban
+      - hindi pumasok
+      - di pumasok
+      - leave
+      - missing class
+      - umabsent
+      - lumiban
+      - liban
+
+
+  - synonym: facility
+    examples: |
+      - facilities
+      - gym
+      - auditorium
+      - classroom
+      - covered court
+      - stage area
+      - lab room
+      - room
+      - venue
+      - laboratory
+      - library
+      - court
+      - campus
+
+  - synonym: requirements
+    examples: |
+      - required
+      - needed
+      - req
+      - reqs
+      - qualifications
+      - prerequisite
+      - prerequisites
+      - kailangan
+      - kailanganin
+      - documents needed
+      - requirements needed
+      - kailangan
+      - reqs
+      - documents needed
+      - requirements needed
+      - requirements
+      - documents
+      - prerequisite
+      - prerequisites
+      
+
+  - synonym: representative
+    examples: |
+      - authorized
+      - authorization
+      - proxy
+      - behalf
+      - someone else
+      - in behalf
+      - kamag-anak
+      - guardian
+      - representative
+
+  - synonym: fee
+    examples: |
+      - pay
+      - payment
+      - cost
+      - charge
+      - money
+      - cashier
+      - bayad
+      - charges
+      - tuition
+      - price
+      - magkano
+      - hm
+      - presyo
+      - babayaran
+
+  - synonym: free
+    examples: |
+      - no payment
+      - without payment
+      - free of charge
+      - zero fee
+      - libre
+      - walang bayad
+      - no cost
+      - gratis
+      - walang bayaran
+
+  - synonym: processing time
+    examples: |
+      - timeline
+      - duration
+      - period
+      - turnaround time
+      - lead time
+      - gaano katagal
+      - ilang araw
+      - kailan makukuha
+      - turnaround
+      - waiting time
+      - gaano katagal bago makuha
+
+  - synonym: contact
+    examples: |
+      - reach
+      - call
+      - hotline
+      - phone
+      - email
+      - number
+      - telephone
+      - messenger
+      - kontak
+      - cellphone
+
+  - synonym: address
+    examples: |
+      - location
+      - located
+      - where
+      - saan
+      - nasaan
+      - lugar
+      - building
+      - exact location
+
+  - synonym: strands
+    examples: |
+      - programs
+      - track
+      - course
+      - major
+      - specialization
+
+  - synonym: uniform
+    examples: |
+      - uniforms
+      - dress
+      - dresscode
+      - attire
+      - uniporme
+      - damit
+      - pe uniform
+      - school uniform
+      - p.e uniform
+
+  - synonym: schedule
+    examples: |
+      - time
+      - oras
+      - when
+      - kailan
+      - date
+      - deadline
+      - calendar
+      - araw
+
+  - synonym: school
+    examples: |
+      - university
+      - univ
+      - campus
 
   - regex: document_type
     examples: |
